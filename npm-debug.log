@@ -1,0 +1,2182 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData readable-stream
+20 silly mapToRegistry name readable-stream
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'readable-stream',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'readable-stream',
+23 silly mapToRegistry   name: 'readable-stream',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+25 verbose request uri https://registry.npmjs.org/readable-stream
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 2:15:44 PM
+28 verbose request id 03bef85c6896a5d3
+29 http request GET https://registry.npmjs.org/readable-stream
+30 http 200 https://registry.npmjs.org/readable-stream
+31 verbose headers { server: 'nginx/1.10.1',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'last-modified': 'Tue, 26 Sep 2017 12:55:32 GMT',
+31 verbose headers   etag: 'W/"59ca4e44-19872"',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'content-length': '10519',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '130',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-yyz8332-YYZ',
+31 verbose headers   'x-cache': 'HIT',
+31 verbose headers   'x-cache-hits': '3',
+31 verbose headers   'x-timer': 'S1508350543.239201,VS0,VE0',
+31 verbose headers   vary: 'Accept-Encoding, Accept' }
+32 silly get cb [ 200,
+32 silly get   { server: 'nginx/1.10.1',
+32 silly get     'content-type': 'application/json',
+32 silly get     'last-modified': 'Tue, 26 Sep 2017 12:55:32 GMT',
+32 silly get     etag: 'W/"59ca4e44-19872"',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'content-length': '10519',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     age: '130',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-yyz8332-YYZ',
+32 silly get     'x-cache': 'HIT',
+32 silly get     'x-cache-hits': '3',
+32 silly get     'x-timer': 'S1508350543.239201,VS0,VE0',
+32 silly get     vary: 'Accept-Encoding, Accept' } ]
+33 verbose get saving readable-stream to C:\Users\Brett\AppData\Roaming\npm-cache\registry.npmjs.org\readable-stream\.cache.json
+34 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+35 silly resolveWithNewModule readable-stream@1.1.14 checking installable status
+36 silly cache add args [ 'readable-stream@1.1', null ]
+37 verbose cache add spec readable-stream@1.1
+38 silly cache add parsed spec Result {
+38 silly cache add   raw: 'readable-stream@1.1',
+38 silly cache add   scope: null,
+38 silly cache add   escapedName: 'readable-stream',
+38 silly cache add   name: 'readable-stream',
+38 silly cache add   rawSpec: '1.1',
+38 silly cache add   spec: '>=1.1.0 <1.2.0',
+38 silly cache add   type: 'range' }
+39 silly addNamed readable-stream@>=1.1.0 <1.2.0
+40 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for readable-stream
+41 silly addNameRange { name: 'readable-stream',
+41 silly addNameRange   range: '>=1.1.0 <1.2.0',
+41 silly addNameRange   hasData: false }
+42 silly mapToRegistry name readable-stream
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry data Result {
+45 silly mapToRegistry   raw: 'readable-stream',
+45 silly mapToRegistry   scope: null,
+45 silly mapToRegistry   escapedName: 'readable-stream',
+45 silly mapToRegistry   name: 'readable-stream',
+45 silly mapToRegistry   rawSpec: '',
+45 silly mapToRegistry   spec: 'latest',
+45 silly mapToRegistry   type: 'tag' }
+46 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+47 verbose addNameRange registry:https://registry.npmjs.org/readable-stream not in flight; fetching
+48 verbose get https://registry.npmjs.org/readable-stream not expired, no request
+49 silly addNameRange number 2 { name: 'readable-stream',
+49 silly addNameRange   range: '>=1.1.0 <1.2.0',
+49 silly addNameRange   hasData: true }
+50 silly addNameRange versions [ 'readable-stream',
+50 silly addNameRange   [ '0.0.1',
+50 silly addNameRange     '0.0.2',
+50 silly addNameRange     '0.0.3',
+50 silly addNameRange     '0.0.4',
+50 silly addNameRange     '0.1.0',
+50 silly addNameRange     '0.2.0',
+50 silly addNameRange     '0.3.0',
+50 silly addNameRange     '0.3.1',
+50 silly addNameRange     '1.0.0',
+50 silly addNameRange     '1.0.1',
+50 silly addNameRange     '1.0.2',
+50 silly addNameRange     '1.0.15',
+50 silly addNameRange     '1.0.17',
+50 silly addNameRange     '1.1.7',
+50 silly addNameRange     '1.1.8',
+50 silly addNameRange     '1.1.9',
+50 silly addNameRange     '1.0.24',
+50 silly addNameRange     '1.0.25',
+50 silly addNameRange     '1.1.10',
+50 silly addNameRange     '1.0.25-1',
+50 silly addNameRange     '1.1.11',
+50 silly addNameRange     '1.0.26',
+50 silly addNameRange     '1.0.26-1',
+50 silly addNameRange     '1.1.11-1',
+50 silly addNameRange     '1.0.26-2',
+50 silly addNameRange     '1.1.12',
+50 silly addNameRange     '1.0.26-3',
+50 silly addNameRange     '1.0.26-4',
+50 silly addNameRange     '1.1.12-1',
+50 silly addNameRange     '1.0.27-1',
+50 silly addNameRange     '1.1.13-1',
+50 silly addNameRange     '1.0.31',
+50 silly addNameRange     '1.1.13',
+50 silly addNameRange     '1.0.32',
+50 silly addNameRange     '1.0.32-1',
+50 silly addNameRange     '1.0.33-1',
+50 silly addNameRange     '1.0.33-2',
+50 silly addNameRange     '1.0.33',
+50 silly addNameRange     '2.0.0',
+50 silly addNameRange     '2.0.1',
+50 silly addNameRange     '2.0.2',
+50 silly addNameRange     '2.0.3',
+50 silly addNameRange     '2.0.4',
+50 silly addNameRange     '2.0.5',
+50 silly addNameRange     '2.0.6',
+50 silly addNameRange     '1.0.34',
+50 silly addNameRange     '1.1.14',
+50 silly addNameRange     '2.1.0',
+50 silly addNameRange     '2.1.1',
+50 silly addNameRange     '2.1.2',
+50 silly addNameRange     '2.1.3',
+50 silly addNameRange     '2.1.4',
+50 silly addNameRange     '2.1.5',
+50 silly addNameRange     '2.2.0',
+50 silly addNameRange     '2.2.1',
+50 silly addNameRange     '2.2.2',
+50 silly addNameRange     '2.2.3',
+50 silly addNameRange     '2.2.4',
+50 silly addNameRange     '2.2.5',
+50 silly addNameRange     '2.2.6',
+50 silly addNameRange     '2.2.7',
+50 silly addNameRange     '2.2.8',
+50 silly addNameRange     '2.2.9',
+50 silly addNameRange     '2.2.10',
+50 silly addNameRange     '2.2.11',
+50 silly addNameRange     '2.3.0',
+50 silly addNameRange     '2.3.1',
+50 silly addNameRange     '2.3.2',
+50 silly addNameRange     '2.3.3' ] ]
+51 silly addNamed readable-stream@1.1.14
+52 verbose addNamed "1.1.14" is a plain semver version for readable-stream
+53 silly mapToRegistry name readable-stream
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'readable-stream',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'readable-stream',
+56 silly mapToRegistry   name: 'readable-stream',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+58 verbose addRemoteTarball https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz',
+59 verbose addRemoteTarball   '7cf4c54ef648e3813084c636dd2079e166c081d9' ]
+60 info retry fetch attempt 1 at 2:15:44 PM
+61 info attempt registry request try #1 at 2:15:44 PM
+62 http fetch GET https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz
+63 http fetch 200 https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz
+64 silly fetchAndShaCheck shasum 7cf4c54ef648e3813084c636dd2079e166c081d9
+65 verbose addTmpTarball C:\Users\Brett\AppData\Local\Temp\npm-557420-daffbe78\registry.npmjs.org\readable-stream\-\readable-stream-1.1.14.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for readable-stream@1.1.14
+67 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+68 silly cache afterAdd readable-stream@1.1.14
+69 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\readable-stream\1.1.14\package\package.json not in flight; writing
+70 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+71 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\readable-stream\1.1.14\package\package.json written
+72 silly fetchNamedPackageData core-util-is
+73 silly mapToRegistry name core-util-is
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry data Result {
+76 silly mapToRegistry   raw: 'core-util-is',
+76 silly mapToRegistry   scope: null,
+76 silly mapToRegistry   escapedName: 'core-util-is',
+76 silly mapToRegistry   name: 'core-util-is',
+76 silly mapToRegistry   rawSpec: '',
+76 silly mapToRegistry   spec: 'latest',
+76 silly mapToRegistry   type: 'tag' }
+77 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+78 silly fetchNamedPackageData isarray
+79 silly mapToRegistry name isarray
+80 silly mapToRegistry using default registry
+81 silly mapToRegistry registry https://registry.npmjs.org/
+82 silly mapToRegistry data Result {
+82 silly mapToRegistry   raw: 'isarray',
+82 silly mapToRegistry   scope: null,
+82 silly mapToRegistry   escapedName: 'isarray',
+82 silly mapToRegistry   name: 'isarray',
+82 silly mapToRegistry   rawSpec: '',
+82 silly mapToRegistry   spec: 'latest',
+82 silly mapToRegistry   type: 'tag' }
+83 silly mapToRegistry uri https://registry.npmjs.org/isarray
+84 silly fetchNamedPackageData string_decoder
+85 silly mapToRegistry name string_decoder
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry data Result {
+88 silly mapToRegistry   raw: 'string_decoder',
+88 silly mapToRegistry   scope: null,
+88 silly mapToRegistry   escapedName: 'string_decoder',
+88 silly mapToRegistry   name: 'string_decoder',
+88 silly mapToRegistry   rawSpec: '',
+88 silly mapToRegistry   spec: 'latest',
+88 silly mapToRegistry   type: 'tag' }
+89 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+90 silly fetchNamedPackageData inherits
+91 silly mapToRegistry name inherits
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry data Result {
+94 silly mapToRegistry   raw: 'inherits',
+94 silly mapToRegistry   scope: null,
+94 silly mapToRegistry   escapedName: 'inherits',
+94 silly mapToRegistry   name: 'inherits',
+94 silly mapToRegistry   rawSpec: '',
+94 silly mapToRegistry   spec: 'latest',
+94 silly mapToRegistry   type: 'tag' }
+95 silly mapToRegistry uri https://registry.npmjs.org/inherits
+96 verbose request uri https://registry.npmjs.org/core-util-is
+97 verbose request no auth needed
+98 info attempt registry request try #1 at 2:15:44 PM
+99 http request GET https://registry.npmjs.org/core-util-is
+100 verbose request uri https://registry.npmjs.org/isarray
+101 verbose request no auth needed
+102 info attempt registry request try #1 at 2:15:44 PM
+103 http request GET https://registry.npmjs.org/isarray
+104 verbose request uri https://registry.npmjs.org/string_decoder
+105 verbose request no auth needed
+106 info attempt registry request try #1 at 2:15:44 PM
+107 http request GET https://registry.npmjs.org/string_decoder
+108 verbose request uri https://registry.npmjs.org/inherits
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 2:15:44 PM
+111 verbose etag W/"5945d779-2230"
+112 verbose lastModified Sun, 18 Jun 2017 01:29:29 GMT
+113 http request GET https://registry.npmjs.org/inherits
+114 http 200 https://registry.npmjs.org/core-util-is
+115 verbose headers { server: 'nginx/1.10.1',
+115 verbose headers   'content-type': 'application/json',
+115 verbose headers   'last-modified': 'Tue, 09 May 2017 07:13:14 GMT',
+115 verbose headers   etag: 'W/"59116c0a-ec5"',
+115 verbose headers   'content-encoding': 'gzip',
+115 verbose headers   'cache-control': 'max-age=300',
+115 verbose headers   'content-length': '970',
+115 verbose headers   'accept-ranges': 'bytes',
+115 verbose headers   date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+115 verbose headers   via: '1.1 varnish',
+115 verbose headers   age: '247',
+115 verbose headers   connection: 'keep-alive',
+115 verbose headers   'x-served-by': 'cache-yyz8332-YYZ',
+115 verbose headers   'x-cache': 'HIT',
+115 verbose headers   'x-cache-hits': '3',
+115 verbose headers   'x-timer': 'S1508350543.335913,VS0,VE0',
+115 verbose headers   vary: 'Accept-Encoding, Accept' }
+116 silly get cb [ 200,
+116 silly get   { server: 'nginx/1.10.1',
+116 silly get     'content-type': 'application/json',
+116 silly get     'last-modified': 'Tue, 09 May 2017 07:13:14 GMT',
+116 silly get     etag: 'W/"59116c0a-ec5"',
+116 silly get     'content-encoding': 'gzip',
+116 silly get     'cache-control': 'max-age=300',
+116 silly get     'content-length': '970',
+116 silly get     'accept-ranges': 'bytes',
+116 silly get     date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+116 silly get     via: '1.1 varnish',
+116 silly get     age: '247',
+116 silly get     connection: 'keep-alive',
+116 silly get     'x-served-by': 'cache-yyz8332-YYZ',
+116 silly get     'x-cache': 'HIT',
+116 silly get     'x-cache-hits': '3',
+116 silly get     'x-timer': 'S1508350543.335913,VS0,VE0',
+116 silly get     vary: 'Accept-Encoding, Accept' } ]
+117 verbose get saving core-util-is to C:\Users\Brett\AppData\Roaming\npm-cache\registry.npmjs.org\core-util-is\.cache.json
+118 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+119 silly resolveWithNewModule core-util-is@1.0.2 checking installable status
+120 silly cache add args [ 'core-util-is@~1.0.0', null ]
+121 verbose cache add spec core-util-is@~1.0.0
+122 silly cache add parsed spec Result {
+122 silly cache add   raw: 'core-util-is@~1.0.0',
+122 silly cache add   scope: null,
+122 silly cache add   escapedName: 'core-util-is',
+122 silly cache add   name: 'core-util-is',
+122 silly cache add   rawSpec: '~1.0.0',
+122 silly cache add   spec: '>=1.0.0 <1.1.0',
+122 silly cache add   type: 'range' }
+123 silly addNamed core-util-is@>=1.0.0 <1.1.0
+124 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for core-util-is
+125 silly addNameRange { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: false }
+126 silly mapToRegistry name core-util-is
+127 silly mapToRegistry using default registry
+128 silly mapToRegistry registry https://registry.npmjs.org/
+129 silly mapToRegistry data Result {
+129 silly mapToRegistry   raw: 'core-util-is',
+129 silly mapToRegistry   scope: null,
+129 silly mapToRegistry   escapedName: 'core-util-is',
+129 silly mapToRegistry   name: 'core-util-is',
+129 silly mapToRegistry   rawSpec: '',
+129 silly mapToRegistry   spec: 'latest',
+129 silly mapToRegistry   type: 'tag' }
+130 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+131 verbose addNameRange registry:https://registry.npmjs.org/core-util-is not in flight; fetching
+132 verbose get https://registry.npmjs.org/core-util-is not expired, no request
+133 silly addNameRange number 2 { name: 'core-util-is', range: '>=1.0.0 <1.1.0', hasData: true }
+134 silly addNameRange versions [ 'core-util-is', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+135 silly addNamed core-util-is@1.0.2
+136 verbose addNamed "1.0.2" is a plain semver version for core-util-is
+137 silly mapToRegistry name core-util-is
+138 silly mapToRegistry using default registry
+139 silly mapToRegistry registry https://registry.npmjs.org/
+140 silly mapToRegistry data Result {
+140 silly mapToRegistry   raw: 'core-util-is',
+140 silly mapToRegistry   scope: null,
+140 silly mapToRegistry   escapedName: 'core-util-is',
+140 silly mapToRegistry   name: 'core-util-is',
+140 silly mapToRegistry   rawSpec: '',
+140 silly mapToRegistry   spec: 'latest',
+140 silly mapToRegistry   type: 'tag' }
+141 silly mapToRegistry uri https://registry.npmjs.org/core-util-is
+142 verbose addRemoteTarball https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz not in flight; adding
+143 verbose addRemoteTarball [ 'https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz',
+143 verbose addRemoteTarball   'b5fd54220aa2bc5ab57aab7140c940754503c1a7' ]
+144 info retry fetch attempt 1 at 2:15:44 PM
+145 info attempt registry request try #1 at 2:15:44 PM
+146 http fetch GET https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz
+147 http fetch 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz
+148 silly fetchAndShaCheck shasum b5fd54220aa2bc5ab57aab7140c940754503c1a7
+149 verbose addTmpTarball C:\Users\Brett\AppData\Local\Temp\npm-557420-daffbe78\registry.npmjs.org\core-util-is\-\core-util-is-1.0.2.tgz not in flight; adding
+150 verbose addTmpTarball already have metadata; skipping unpack for core-util-is@1.0.2
+151 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+152 silly cache afterAdd core-util-is@1.0.2
+153 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\core-util-is\1.0.2\package\package.json not in flight; writing
+154 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+155 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\core-util-is\1.0.2\package\package.json written
+156 http 200 https://registry.npmjs.org/isarray
+157 verbose headers { server: 'nginx/1.10.1',
+157 verbose headers   'content-type': 'application/json',
+157 verbose headers   'last-modified': 'Wed, 12 Jul 2017 08:52:36 GMT',
+157 verbose headers   etag: 'W/"5965e354-286a"',
+157 verbose headers   'content-encoding': 'gzip',
+157 verbose headers   'cache-control': 'max-age=300',
+157 verbose headers   'content-length': '2617',
+157 verbose headers   'accept-ranges': 'bytes',
+157 verbose headers   date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+157 verbose headers   via: '1.1 varnish',
+157 verbose headers   age: '239',
+157 verbose headers   connection: 'keep-alive',
+157 verbose headers   'x-served-by': 'cache-yyz8323-YYZ',
+157 verbose headers   'x-cache': 'HIT',
+157 verbose headers   'x-cache-hits': '3',
+157 verbose headers   'x-timer': 'S1508350543.363124,VS0,VE0',
+157 verbose headers   vary: 'Accept-Encoding, Accept' }
+158 silly get cb [ 200,
+158 silly get   { server: 'nginx/1.10.1',
+158 silly get     'content-type': 'application/json',
+158 silly get     'last-modified': 'Wed, 12 Jul 2017 08:52:36 GMT',
+158 silly get     etag: 'W/"5965e354-286a"',
+158 silly get     'content-encoding': 'gzip',
+158 silly get     'cache-control': 'max-age=300',
+158 silly get     'content-length': '2617',
+158 silly get     'accept-ranges': 'bytes',
+158 silly get     date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+158 silly get     via: '1.1 varnish',
+158 silly get     age: '239',
+158 silly get     connection: 'keep-alive',
+158 silly get     'x-served-by': 'cache-yyz8323-YYZ',
+158 silly get     'x-cache': 'HIT',
+158 silly get     'x-cache-hits': '3',
+158 silly get     'x-timer': 'S1508350543.363124,VS0,VE0',
+158 silly get     vary: 'Accept-Encoding, Accept' } ]
+159 verbose get saving isarray to C:\Users\Brett\AppData\Roaming\npm-cache\registry.npmjs.org\isarray\.cache.json
+160 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+161 http 304 https://registry.npmjs.org/inherits
+162 verbose headers { date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+162 verbose headers   via: '1.1 varnish',
+162 verbose headers   'cache-control': 'max-age=300',
+162 verbose headers   etag: 'W/"5945d779-2230"',
+162 verbose headers   age: '27',
+162 verbose headers   connection: 'keep-alive',
+162 verbose headers   'x-served-by': 'cache-yyz8324-YYZ',
+162 verbose headers   'x-cache': 'HIT',
+162 verbose headers   'x-cache-hits': '1',
+162 verbose headers   'x-timer': 'S1508350543.364681,VS0,VE0',
+162 verbose headers   vary: 'Accept-Encoding, Accept' }
+163 silly get cb [ 304,
+163 silly get   { date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+163 silly get     via: '1.1 varnish',
+163 silly get     'cache-control': 'max-age=300',
+163 silly get     etag: 'W/"5945d779-2230"',
+163 silly get     age: '27',
+163 silly get     connection: 'keep-alive',
+163 silly get     'x-served-by': 'cache-yyz8324-YYZ',
+163 silly get     'x-cache': 'HIT',
+163 silly get     'x-cache-hits': '1',
+163 silly get     'x-timer': 'S1508350543.364681,VS0,VE0',
+163 silly get     vary: 'Accept-Encoding, Accept' } ]
+164 verbose etag https://registry.npmjs.org/inherits from cache
+165 verbose get saving inherits to C:\Users\Brett\AppData\Roaming\npm-cache\registry.npmjs.org\inherits\.cache.json
+166 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+167 http 200 https://registry.npmjs.org/string_decoder
+168 verbose headers { server: 'nginx/1.10.1',
+168 verbose headers   'content-type': 'application/json',
+168 verbose headers   'last-modified': 'Thu, 22 Jun 2017 18:36:15 GMT',
+168 verbose headers   etag: 'W/"594c0e1f-3a37"',
+168 verbose headers   'content-encoding': 'gzip',
+168 verbose headers   'cache-control': 'max-age=300',
+168 verbose headers   'content-length': '2625',
+168 verbose headers   'accept-ranges': 'bytes',
+168 verbose headers   date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+168 verbose headers   via: '1.1 varnish',
+168 verbose headers   age: '129',
+168 verbose headers   connection: 'keep-alive',
+168 verbose headers   'x-served-by': 'cache-yyz8331-YYZ',
+168 verbose headers   'x-cache': 'HIT',
+168 verbose headers   'x-cache-hits': '3',
+168 verbose headers   'x-timer': 'S1508350543.363793,VS0,VE0',
+168 verbose headers   vary: 'Accept-Encoding, Accept' }
+169 silly get cb [ 200,
+169 silly get   { server: 'nginx/1.10.1',
+169 silly get     'content-type': 'application/json',
+169 silly get     'last-modified': 'Thu, 22 Jun 2017 18:36:15 GMT',
+169 silly get     etag: 'W/"594c0e1f-3a37"',
+169 silly get     'content-encoding': 'gzip',
+169 silly get     'cache-control': 'max-age=300',
+169 silly get     'content-length': '2625',
+169 silly get     'accept-ranges': 'bytes',
+169 silly get     date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+169 silly get     via: '1.1 varnish',
+169 silly get     age: '129',
+169 silly get     connection: 'keep-alive',
+169 silly get     'x-served-by': 'cache-yyz8331-YYZ',
+169 silly get     'x-cache': 'HIT',
+169 silly get     'x-cache-hits': '3',
+169 silly get     'x-timer': 'S1508350543.363793,VS0,VE0',
+169 silly get     vary: 'Accept-Encoding, Accept' } ]
+170 verbose get saving string_decoder to C:\Users\Brett\AppData\Roaming\npm-cache\registry.npmjs.org\string_decoder\.cache.json
+171 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+172 silly resolveWithNewModule isarray@0.0.1 checking installable status
+173 silly cache add args [ 'isarray@0.0.1', null ]
+174 verbose cache add spec isarray@0.0.1
+175 silly cache add parsed spec Result {
+175 silly cache add   raw: 'isarray@0.0.1',
+175 silly cache add   scope: null,
+175 silly cache add   escapedName: 'isarray',
+175 silly cache add   name: 'isarray',
+175 silly cache add   rawSpec: '0.0.1',
+175 silly cache add   spec: '0.0.1',
+175 silly cache add   type: 'version' }
+176 silly addNamed isarray@0.0.1
+177 verbose addNamed "0.0.1" is a plain semver version for isarray
+178 silly mapToRegistry name isarray
+179 silly mapToRegistry using default registry
+180 silly mapToRegistry registry https://registry.npmjs.org/
+181 silly mapToRegistry data Result {
+181 silly mapToRegistry   raw: 'isarray',
+181 silly mapToRegistry   scope: null,
+181 silly mapToRegistry   escapedName: 'isarray',
+181 silly mapToRegistry   name: 'isarray',
+181 silly mapToRegistry   rawSpec: '',
+181 silly mapToRegistry   spec: 'latest',
+181 silly mapToRegistry   type: 'tag' }
+182 silly mapToRegistry uri https://registry.npmjs.org/isarray
+183 verbose addNameVersion registry:https://registry.npmjs.org/isarray not in flight; fetching
+184 silly resolveWithNewModule string_decoder@0.10.31 checking installable status
+185 silly cache add args [ 'string_decoder@~0.10.x', null ]
+186 verbose cache add spec string_decoder@~0.10.x
+187 silly cache add parsed spec Result {
+187 silly cache add   raw: 'string_decoder@~0.10.x',
+187 silly cache add   scope: null,
+187 silly cache add   escapedName: 'string_decoder',
+187 silly cache add   name: 'string_decoder',
+187 silly cache add   rawSpec: '~0.10.x',
+187 silly cache add   spec: '>=0.10.0 <0.11.0',
+187 silly cache add   type: 'range' }
+188 silly addNamed string_decoder@>=0.10.0 <0.11.0
+189 verbose addNamed ">=0.10.0 <0.11.0" is a valid semver range for string_decoder
+190 silly addNameRange { name: 'string_decoder',
+190 silly addNameRange   range: '>=0.10.0 <0.11.0',
+190 silly addNameRange   hasData: false }
+191 silly mapToRegistry name string_decoder
+192 silly mapToRegistry using default registry
+193 silly mapToRegistry registry https://registry.npmjs.org/
+194 silly mapToRegistry data Result {
+194 silly mapToRegistry   raw: 'string_decoder',
+194 silly mapToRegistry   scope: null,
+194 silly mapToRegistry   escapedName: 'string_decoder',
+194 silly mapToRegistry   name: 'string_decoder',
+194 silly mapToRegistry   rawSpec: '',
+194 silly mapToRegistry   spec: 'latest',
+194 silly mapToRegistry   type: 'tag' }
+195 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+196 verbose addNameRange registry:https://registry.npmjs.org/string_decoder not in flight; fetching
+197 silly resolveWithNewModule inherits@2.0.3 checking installable status
+198 silly cache add args [ 'inherits@~2.0.1', null ]
+199 verbose cache add spec inherits@~2.0.1
+200 silly cache add parsed spec Result {
+200 silly cache add   raw: 'inherits@~2.0.1',
+200 silly cache add   scope: null,
+200 silly cache add   escapedName: 'inherits',
+200 silly cache add   name: 'inherits',
+200 silly cache add   rawSpec: '~2.0.1',
+200 silly cache add   spec: '>=2.0.1 <2.1.0',
+200 silly cache add   type: 'range' }
+201 silly addNamed inherits@>=2.0.1 <2.1.0
+202 verbose addNamed ">=2.0.1 <2.1.0" is a valid semver range for inherits
+203 silly addNameRange { name: 'inherits', range: '>=2.0.1 <2.1.0', hasData: false }
+204 silly mapToRegistry name inherits
+205 silly mapToRegistry using default registry
+206 silly mapToRegistry registry https://registry.npmjs.org/
+207 silly mapToRegistry data Result {
+207 silly mapToRegistry   raw: 'inherits',
+207 silly mapToRegistry   scope: null,
+207 silly mapToRegistry   escapedName: 'inherits',
+207 silly mapToRegistry   name: 'inherits',
+207 silly mapToRegistry   rawSpec: '',
+207 silly mapToRegistry   spec: 'latest',
+207 silly mapToRegistry   type: 'tag' }
+208 silly mapToRegistry uri https://registry.npmjs.org/inherits
+209 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+210 verbose get https://registry.npmjs.org/isarray not expired, no request
+211 verbose get https://registry.npmjs.org/string_decoder not expired, no request
+212 silly addNameRange number 2 { name: 'string_decoder',
+212 silly addNameRange   range: '>=0.10.0 <0.11.0',
+212 silly addNameRange   hasData: true }
+213 silly addNameRange versions [ 'string_decoder',
+213 silly addNameRange   [ '0.0.0',
+213 silly addNameRange     '0.0.1',
+213 silly addNameRange     '0.10.24',
+213 silly addNameRange     '0.11.10',
+213 silly addNameRange     '0.10.25',
+213 silly addNameRange     '0.11.10-1',
+213 silly addNameRange     '0.10.25-1',
+213 silly addNameRange     '0.10.31',
+213 silly addNameRange     '1.0.0',
+213 silly addNameRange     '1.0.1',
+213 silly addNameRange     '1.0.2',
+213 silly addNameRange     '1.0.3' ] ]
+214 silly addNamed string_decoder@0.10.31
+215 verbose addNamed "0.10.31" is a plain semver version for string_decoder
+216 silly mapToRegistry name isarray
+217 silly mapToRegistry using default registry
+218 silly mapToRegistry registry https://registry.npmjs.org/
+219 silly mapToRegistry data Result {
+219 silly mapToRegistry   raw: 'isarray',
+219 silly mapToRegistry   scope: null,
+219 silly mapToRegistry   escapedName: 'isarray',
+219 silly mapToRegistry   name: 'isarray',
+219 silly mapToRegistry   rawSpec: '',
+219 silly mapToRegistry   spec: 'latest',
+219 silly mapToRegistry   type: 'tag' }
+220 silly mapToRegistry uri https://registry.npmjs.org/isarray
+221 verbose addRemoteTarball https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz not in flight; adding
+222 verbose addRemoteTarball [ 'https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz',
+222 verbose addRemoteTarball   '8a18acfca9a8f4177e09abfc6038939b05d1eedf' ]
+223 silly mapToRegistry name string_decoder
+224 silly mapToRegistry using default registry
+225 silly mapToRegistry registry https://registry.npmjs.org/
+226 silly mapToRegistry data Result {
+226 silly mapToRegistry   raw: 'string_decoder',
+226 silly mapToRegistry   scope: null,
+226 silly mapToRegistry   escapedName: 'string_decoder',
+226 silly mapToRegistry   name: 'string_decoder',
+226 silly mapToRegistry   rawSpec: '',
+226 silly mapToRegistry   spec: 'latest',
+226 silly mapToRegistry   type: 'tag' }
+227 silly mapToRegistry uri https://registry.npmjs.org/string_decoder
+228 verbose addRemoteTarball https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz not in flight; adding
+229 verbose addRemoteTarball [ 'https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz',
+229 verbose addRemoteTarball   '62e203bc41766c6c28c9fc84301dab1c5310fa94' ]
+230 verbose get https://registry.npmjs.org/inherits not expired, no request
+231 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.1 <2.1.0', hasData: true }
+232 silly addNameRange versions [ 'inherits',
+232 silly addNameRange   [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2', '2.0.3' ] ]
+233 silly addNamed inherits@2.0.3
+234 verbose addNamed "2.0.3" is a plain semver version for inherits
+235 silly cache afterAdd inherits@2.0.3
+236 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\inherits\2.0.3\package\package.json not in flight; writing
+237 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+238 info retry fetch attempt 1 at 2:15:44 PM
+239 info attempt registry request try #1 at 2:15:44 PM
+240 http fetch GET https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz
+241 info retry fetch attempt 1 at 2:15:44 PM
+242 info attempt registry request try #1 at 2:15:44 PM
+243 http fetch GET https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz
+244 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\inherits\2.0.3\package\package.json written
+245 http fetch 200 https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz
+246 silly fetchAndShaCheck shasum 62e203bc41766c6c28c9fc84301dab1c5310fa94
+247 verbose addTmpTarball C:\Users\Brett\AppData\Local\Temp\npm-557420-daffbe78\registry.npmjs.org\string_decoder\-\string_decoder-0.10.31.tgz not in flight; adding
+248 verbose addTmpTarball already have metadata; skipping unpack for string_decoder@0.10.31
+249 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+250 http fetch 200 https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz
+251 silly fetchAndShaCheck shasum 8a18acfca9a8f4177e09abfc6038939b05d1eedf
+252 silly cache afterAdd string_decoder@0.10.31
+253 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\string_decoder\0.10.31\package\package.json not in flight; writing
+254 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+255 verbose addTmpTarball C:\Users\Brett\AppData\Local\Temp\npm-557420-daffbe78\registry.npmjs.org\isarray\-\isarray-0.0.1.tgz not in flight; adding
+256 verbose addTmpTarball already have metadata; skipping unpack for isarray@0.0.1
+257 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+258 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\string_decoder\0.10.31\package\package.json written
+259 silly cache afterAdd isarray@0.0.1
+260 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\isarray\0.0.1\package\package.json not in flight; writing
+261 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+262 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\isarray\0.0.1\package\package.json written
+263 silly fetchNamedPackageData tap-consumer
+264 silly mapToRegistry name tap-consumer
+265 silly mapToRegistry using default registry
+266 silly mapToRegistry registry https://registry.npmjs.org/
+267 silly mapToRegistry data Result {
+267 silly mapToRegistry   raw: 'tap-consumer',
+267 silly mapToRegistry   scope: null,
+267 silly mapToRegistry   escapedName: 'tap-consumer',
+267 silly mapToRegistry   name: 'tap-consumer',
+267 silly mapToRegistry   rawSpec: '',
+267 silly mapToRegistry   spec: 'latest',
+267 silly mapToRegistry   type: 'tag' }
+268 silly mapToRegistry uri https://registry.npmjs.org/tap-consumer
+269 verbose request uri https://registry.npmjs.org/tap-consumer
+270 verbose request no auth needed
+271 info attempt registry request try #1 at 2:15:44 PM
+272 http request GET https://registry.npmjs.org/tap-consumer
+273 http 200 https://registry.npmjs.org/tap-consumer
+274 verbose headers { server: 'nginx/1.10.1',
+274 verbose headers   'content-type': 'application/json',
+274 verbose headers   'last-modified': 'Wed, 15 Apr 2015 17:36:40 GMT',
+274 verbose headers   etag: 'W/"552ea1a8-528"',
+274 verbose headers   'content-encoding': 'gzip',
+274 verbose headers   'cache-control': 'max-age=300',
+274 verbose headers   'content-length': '618',
+274 verbose headers   'accept-ranges': 'bytes',
+274 verbose headers   date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+274 verbose headers   via: '1.1 varnish',
+274 verbose headers   age: '0',
+274 verbose headers   connection: 'keep-alive',
+274 verbose headers   'x-served-by': 'cache-yyz8331-YYZ',
+274 verbose headers   'x-cache': 'MISS',
+274 verbose headers   'x-cache-hits': '0',
+274 verbose headers   'x-timer': 'S1508350543.425777,VS0,VE69',
+274 verbose headers   vary: 'Accept-Encoding, Accept' }
+275 silly get cb [ 200,
+275 silly get   { server: 'nginx/1.10.1',
+275 silly get     'content-type': 'application/json',
+275 silly get     'last-modified': 'Wed, 15 Apr 2015 17:36:40 GMT',
+275 silly get     etag: 'W/"552ea1a8-528"',
+275 silly get     'content-encoding': 'gzip',
+275 silly get     'cache-control': 'max-age=300',
+275 silly get     'content-length': '618',
+275 silly get     'accept-ranges': 'bytes',
+275 silly get     date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+275 silly get     via: '1.1 varnish',
+275 silly get     age: '0',
+275 silly get     connection: 'keep-alive',
+275 silly get     'x-served-by': 'cache-yyz8331-YYZ',
+275 silly get     'x-cache': 'MISS',
+275 silly get     'x-cache-hits': '0',
+275 silly get     'x-timer': 'S1508350543.425777,VS0,VE69',
+275 silly get     vary: 'Accept-Encoding, Accept' } ]
+276 verbose get saving tap-consumer to C:\Users\Brett\AppData\Roaming\npm-cache\registry.npmjs.org\tap-consumer\.cache.json
+277 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+278 silly resolveWithNewModule tap-consumer@0.0.1 checking installable status
+279 silly cache add args [ 'tap-consumer@*', null ]
+280 verbose cache add spec tap-consumer@*
+281 silly cache add parsed spec Result {
+281 silly cache add   raw: 'tap-consumer@*',
+281 silly cache add   scope: null,
+281 silly cache add   escapedName: 'tap-consumer',
+281 silly cache add   name: 'tap-consumer',
+281 silly cache add   rawSpec: '*',
+281 silly cache add   spec: '*',
+281 silly cache add   type: 'range' }
+282 silly addNamed tap-consumer@*
+283 verbose addNamed "*" is a valid semver range for tap-consumer
+284 silly addNameRange { name: 'tap-consumer', range: '*', hasData: false }
+285 silly mapToRegistry name tap-consumer
+286 silly mapToRegistry using default registry
+287 silly mapToRegistry registry https://registry.npmjs.org/
+288 silly mapToRegistry data Result {
+288 silly mapToRegistry   raw: 'tap-consumer',
+288 silly mapToRegistry   scope: null,
+288 silly mapToRegistry   escapedName: 'tap-consumer',
+288 silly mapToRegistry   name: 'tap-consumer',
+288 silly mapToRegistry   rawSpec: '',
+288 silly mapToRegistry   spec: 'latest',
+288 silly mapToRegistry   type: 'tag' }
+289 silly mapToRegistry uri https://registry.npmjs.org/tap-consumer
+290 verbose addNameRange registry:https://registry.npmjs.org/tap-consumer not in flight; fetching
+291 verbose get https://registry.npmjs.org/tap-consumer not expired, no request
+292 silly addNameRange number 2 { name: 'tap-consumer', range: '*', hasData: true }
+293 silly addNameRange versions [ 'tap-consumer', [ '0.0.1' ] ]
+294 silly addNamed tap-consumer@0.0.1
+295 verbose addNamed "0.0.1" is a plain semver version for tap-consumer
+296 warn deprecated tap-consumer@0.0.1: This module is not supported. Please use 'tap' instead.
+297 silly mapToRegistry name tap-consumer
+298 silly mapToRegistry using default registry
+299 silly mapToRegistry registry https://registry.npmjs.org/
+300 silly mapToRegistry data Result {
+300 silly mapToRegistry   raw: 'tap-consumer',
+300 silly mapToRegistry   scope: null,
+300 silly mapToRegistry   escapedName: 'tap-consumer',
+300 silly mapToRegistry   name: 'tap-consumer',
+300 silly mapToRegistry   rawSpec: '',
+300 silly mapToRegistry   spec: 'latest',
+300 silly mapToRegistry   type: 'tag' }
+301 silly mapToRegistry uri https://registry.npmjs.org/tap-consumer
+302 verbose addRemoteTarball https://registry.npmjs.org/tap-consumer/-/tap-consumer-0.0.1.tgz not in flight; adding
+303 verbose addRemoteTarball [ 'https://registry.npmjs.org/tap-consumer/-/tap-consumer-0.0.1.tgz',
+303 verbose addRemoteTarball   'a127fb0f28fef4b5fe573b2fcfbd170e27020796' ]
+304 info retry fetch attempt 1 at 2:15:44 PM
+305 info attempt registry request try #1 at 2:15:44 PM
+306 http fetch GET https://registry.npmjs.org/tap-consumer/-/tap-consumer-0.0.1.tgz
+307 http fetch 200 https://registry.npmjs.org/tap-consumer/-/tap-consumer-0.0.1.tgz
+308 silly fetchAndShaCheck shasum a127fb0f28fef4b5fe573b2fcfbd170e27020796
+309 verbose addTmpTarball C:\Users\Brett\AppData\Local\Temp\npm-557420-daffbe78\registry.npmjs.org\tap-consumer\-\tap-consumer-0.0.1.tgz not in flight; adding
+310 verbose addTmpTarball already have metadata; skipping unpack for tap-consumer@0.0.1
+311 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+312 silly cache afterAdd tap-consumer@0.0.1
+313 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\tap-consumer\0.0.1\package\package.json not in flight; writing
+314 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+315 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\tap-consumer\0.0.1\package\package.json written
+316 silly fetchNamedPackageData tap-results
+317 silly mapToRegistry name tap-results
+318 silly mapToRegistry using default registry
+319 silly mapToRegistry registry https://registry.npmjs.org/
+320 silly mapToRegistry data Result {
+320 silly mapToRegistry   raw: 'tap-results',
+320 silly mapToRegistry   scope: null,
+320 silly mapToRegistry   escapedName: 'tap-results',
+320 silly mapToRegistry   name: 'tap-results',
+320 silly mapToRegistry   rawSpec: '',
+320 silly mapToRegistry   spec: 'latest',
+320 silly mapToRegistry   type: 'tag' }
+321 silly mapToRegistry uri https://registry.npmjs.org/tap-results
+322 silly fetchNamedPackageData yamlish
+323 silly mapToRegistry name yamlish
+324 silly mapToRegistry using default registry
+325 silly mapToRegistry registry https://registry.npmjs.org/
+326 silly mapToRegistry data Result {
+326 silly mapToRegistry   raw: 'yamlish',
+326 silly mapToRegistry   scope: null,
+326 silly mapToRegistry   escapedName: 'yamlish',
+326 silly mapToRegistry   name: 'yamlish',
+326 silly mapToRegistry   rawSpec: '',
+326 silly mapToRegistry   spec: 'latest',
+326 silly mapToRegistry   type: 'tag' }
+327 silly mapToRegistry uri https://registry.npmjs.org/yamlish
+328 verbose request uri https://registry.npmjs.org/tap-results
+329 verbose request no auth needed
+330 info attempt registry request try #1 at 2:15:45 PM
+331 http request GET https://registry.npmjs.org/tap-results
+332 verbose request uri https://registry.npmjs.org/yamlish
+333 verbose request no auth needed
+334 info attempt registry request try #1 at 2:15:45 PM
+335 http request GET https://registry.npmjs.org/yamlish
+336 http 200 https://registry.npmjs.org/yamlish
+337 verbose headers { server: 'nginx/1.10.1',
+337 verbose headers   'content-type': 'application/json',
+337 verbose headers   'last-modified': 'Tue, 11 Apr 2017 19:03:02 GMT',
+337 verbose headers   etag: 'W/"58ed2866-1ee9"',
+337 verbose headers   'content-encoding': 'gzip',
+337 verbose headers   'cache-control': 'max-age=300',
+337 verbose headers   'content-length': '1572',
+337 verbose headers   'accept-ranges': 'bytes',
+337 verbose headers   date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+337 verbose headers   via: '1.1 varnish',
+337 verbose headers   age: '0',
+337 verbose headers   connection: 'keep-alive',
+337 verbose headers   'x-served-by': 'cache-yyz8323-YYZ',
+337 verbose headers   'x-cache': 'MISS',
+337 verbose headers   'x-cache-hits': '0',
+337 verbose headers   'x-timer': 'S1508350544.867353,VS0,VE70',
+337 verbose headers   vary: 'Accept-Encoding, Accept' }
+338 silly get cb [ 200,
+338 silly get   { server: 'nginx/1.10.1',
+338 silly get     'content-type': 'application/json',
+338 silly get     'last-modified': 'Tue, 11 Apr 2017 19:03:02 GMT',
+338 silly get     etag: 'W/"58ed2866-1ee9"',
+338 silly get     'content-encoding': 'gzip',
+338 silly get     'cache-control': 'max-age=300',
+338 silly get     'content-length': '1572',
+338 silly get     'accept-ranges': 'bytes',
+338 silly get     date: 'Wed, 18 Oct 2017 18:15:43 GMT',
+338 silly get     via: '1.1 varnish',
+338 silly get     age: '0',
+338 silly get     connection: 'keep-alive',
+338 silly get     'x-served-by': 'cache-yyz8323-YYZ',
+338 silly get     'x-cache': 'MISS',
+338 silly get     'x-cache-hits': '0',
+338 silly get     'x-timer': 'S1508350544.867353,VS0,VE70',
+338 silly get     vary: 'Accept-Encoding, Accept' } ]
+339 verbose get saving yamlish to C:\Users\Brett\AppData\Roaming\npm-cache\registry.npmjs.org\yamlish\.cache.json
+340 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+341 silly resolveWithNewModule yamlish@0.0.7 checking installable status
+342 silly cache add args [ 'yamlish@*', null ]
+343 verbose cache add spec yamlish@*
+344 silly cache add parsed spec Result {
+344 silly cache add   raw: 'yamlish@*',
+344 silly cache add   scope: null,
+344 silly cache add   escapedName: 'yamlish',
+344 silly cache add   name: 'yamlish',
+344 silly cache add   rawSpec: '*',
+344 silly cache add   spec: '*',
+344 silly cache add   type: 'range' }
+345 silly addNamed yamlish@*
+346 verbose addNamed "*" is a valid semver range for yamlish
+347 silly addNameRange { name: 'yamlish', range: '*', hasData: false }
+348 silly mapToRegistry name yamlish
+349 silly mapToRegistry using default registry
+350 silly mapToRegistry registry https://registry.npmjs.org/
+351 silly mapToRegistry data Result {
+351 silly mapToRegistry   raw: 'yamlish',
+351 silly mapToRegistry   scope: null,
+351 silly mapToRegistry   escapedName: 'yamlish',
+351 silly mapToRegistry   name: 'yamlish',
+351 silly mapToRegistry   rawSpec: '',
+351 silly mapToRegistry   spec: 'latest',
+351 silly mapToRegistry   type: 'tag' }
+352 silly mapToRegistry uri https://registry.npmjs.org/yamlish
+353 verbose addNameRange registry:https://registry.npmjs.org/yamlish not in flight; fetching
+354 verbose get https://registry.npmjs.org/yamlish not expired, no request
+355 silly addNameRange number 2 { name: 'yamlish', range: '*', hasData: true }
+356 silly addNameRange versions [ 'yamlish',
+356 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5', '0.0.6', '0.0.7' ] ]
+357 silly addNamed yamlish@0.0.7
+358 verbose addNamed "0.0.7" is a plain semver version for yamlish
+359 silly mapToRegistry name yamlish
+360 silly mapToRegistry using default registry
+361 silly mapToRegistry registry https://registry.npmjs.org/
+362 silly mapToRegistry data Result {
+362 silly mapToRegistry   raw: 'yamlish',
+362 silly mapToRegistry   scope: null,
+362 silly mapToRegistry   escapedName: 'yamlish',
+362 silly mapToRegistry   name: 'yamlish',
+362 silly mapToRegistry   rawSpec: '',
+362 silly mapToRegistry   spec: 'latest',
+362 silly mapToRegistry   type: 'tag' }
+363 silly mapToRegistry uri https://registry.npmjs.org/yamlish
+364 verbose addRemoteTarball https://registry.npmjs.org/yamlish/-/yamlish-0.0.7.tgz not in flight; adding
+365 verbose addRemoteTarball [ 'https://registry.npmjs.org/yamlish/-/yamlish-0.0.7.tgz',
+365 verbose addRemoteTarball   'b4af9a1dcc63618873c3d6e451ec3213c39a57fb' ]
+366 info retry fetch attempt 1 at 2:15:45 PM
+367 info attempt registry request try #1 at 2:15:45 PM
+368 http fetch GET https://registry.npmjs.org/yamlish/-/yamlish-0.0.7.tgz
+369 http fetch 200 https://registry.npmjs.org/yamlish/-/yamlish-0.0.7.tgz
+370 silly fetchAndShaCheck shasum b4af9a1dcc63618873c3d6e451ec3213c39a57fb
+371 verbose addTmpTarball C:\Users\Brett\AppData\Local\Temp\npm-557420-daffbe78\registry.npmjs.org\yamlish\-\yamlish-0.0.7.tgz not in flight; adding
+372 verbose addTmpTarball already have metadata; skipping unpack for yamlish@0.0.7
+373 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+374 silly cache afterAdd yamlish@0.0.7
+375 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\yamlish\0.0.7\package\package.json not in flight; writing
+376 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+377 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\yamlish\0.0.7\package\package.json written
+378 http 200 https://registry.npmjs.org/tap-results
+379 verbose headers { server: 'nginx/1.10.3',
+379 verbose headers   'content-type': 'application/json',
+379 verbose headers   'last-modified': 'Wed, 15 Apr 2015 17:36:34 GMT',
+379 verbose headers   etag: 'W/"552ea1a2-895"',
+379 verbose headers   'content-encoding': 'gzip',
+379 verbose headers   'cache-control': 'max-age=300',
+379 verbose headers   'content-length': '778',
+379 verbose headers   'accept-ranges': 'bytes',
+379 verbose headers   date: 'Wed, 18 Oct 2017 18:15:44 GMT',
+379 verbose headers   via: '1.1 varnish',
+379 verbose headers   age: '0',
+379 verbose headers   connection: 'keep-alive',
+379 verbose headers   'x-served-by': 'cache-yyz8332-YYZ',
+379 verbose headers   'x-cache': 'MISS',
+379 verbose headers   'x-cache-hits': '0',
+379 verbose headers   'x-timer': 'S1508350544.867058,VS0,VE145',
+379 verbose headers   vary: 'Accept-Encoding, Accept' }
+380 silly get cb [ 200,
+380 silly get   { server: 'nginx/1.10.3',
+380 silly get     'content-type': 'application/json',
+380 silly get     'last-modified': 'Wed, 15 Apr 2015 17:36:34 GMT',
+380 silly get     etag: 'W/"552ea1a2-895"',
+380 silly get     'content-encoding': 'gzip',
+380 silly get     'cache-control': 'max-age=300',
+380 silly get     'content-length': '778',
+380 silly get     'accept-ranges': 'bytes',
+380 silly get     date: 'Wed, 18 Oct 2017 18:15:44 GMT',
+380 silly get     via: '1.1 varnish',
+380 silly get     age: '0',
+380 silly get     connection: 'keep-alive',
+380 silly get     'x-served-by': 'cache-yyz8332-YYZ',
+380 silly get     'x-cache': 'MISS',
+380 silly get     'x-cache-hits': '0',
+380 silly get     'x-timer': 'S1508350544.867058,VS0,VE145',
+380 silly get     vary: 'Accept-Encoding, Accept' } ]
+381 verbose get saving tap-results to C:\Users\Brett\AppData\Roaming\npm-cache\registry.npmjs.org\tap-results\.cache.json
+382 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+383 silly resolveWithNewModule tap-results@0.0.2 checking installable status
+384 silly cache add args [ 'tap-results@0.x', null ]
+385 verbose cache add spec tap-results@0.x
+386 silly cache add parsed spec Result {
+386 silly cache add   raw: 'tap-results@0.x',
+386 silly cache add   scope: null,
+386 silly cache add   escapedName: 'tap-results',
+386 silly cache add   name: 'tap-results',
+386 silly cache add   rawSpec: '0.x',
+386 silly cache add   spec: '>=0.0.0 <1.0.0',
+386 silly cache add   type: 'range' }
+387 silly addNamed tap-results@>=0.0.0 <1.0.0
+388 verbose addNamed ">=0.0.0 <1.0.0" is a valid semver range for tap-results
+389 silly addNameRange { name: 'tap-results', range: '>=0.0.0 <1.0.0', hasData: false }
+390 silly mapToRegistry name tap-results
+391 silly mapToRegistry using default registry
+392 silly mapToRegistry registry https://registry.npmjs.org/
+393 silly mapToRegistry data Result {
+393 silly mapToRegistry   raw: 'tap-results',
+393 silly mapToRegistry   scope: null,
+393 silly mapToRegistry   escapedName: 'tap-results',
+393 silly mapToRegistry   name: 'tap-results',
+393 silly mapToRegistry   rawSpec: '',
+393 silly mapToRegistry   spec: 'latest',
+393 silly mapToRegistry   type: 'tag' }
+394 silly mapToRegistry uri https://registry.npmjs.org/tap-results
+395 verbose addNameRange registry:https://registry.npmjs.org/tap-results not in flight; fetching
+396 verbose get https://registry.npmjs.org/tap-results not expired, no request
+397 silly addNameRange number 2 { name: 'tap-results', range: '>=0.0.0 <1.0.0', hasData: true }
+398 silly addNameRange versions [ 'tap-results', [ '0.0.1', '0.0.2' ] ]
+399 silly addNamed tap-results@0.0.2
+400 verbose addNamed "0.0.2" is a plain semver version for tap-results
+401 warn deprecated tap-results@0.0.2: This module is not supported. Please use 'tap' instead.
+402 silly mapToRegistry name tap-results
+403 silly mapToRegistry using default registry
+404 silly mapToRegistry registry https://registry.npmjs.org/
+405 silly mapToRegistry data Result {
+405 silly mapToRegistry   raw: 'tap-results',
+405 silly mapToRegistry   scope: null,
+405 silly mapToRegistry   escapedName: 'tap-results',
+405 silly mapToRegistry   name: 'tap-results',
+405 silly mapToRegistry   rawSpec: '',
+405 silly mapToRegistry   spec: 'latest',
+405 silly mapToRegistry   type: 'tag' }
+406 silly mapToRegistry uri https://registry.npmjs.org/tap-results
+407 verbose addRemoteTarball https://registry.npmjs.org/tap-results/-/tap-results-0.0.2.tgz not in flight; adding
+408 verbose addRemoteTarball [ 'https://registry.npmjs.org/tap-results/-/tap-results-0.0.2.tgz',
+408 verbose addRemoteTarball   'a124dfe7a4b66279c6f65aedc54ec5977464268b' ]
+409 info retry fetch attempt 1 at 2:15:45 PM
+410 info attempt registry request try #1 at 2:15:45 PM
+411 http fetch GET https://registry.npmjs.org/tap-results/-/tap-results-0.0.2.tgz
+412 http fetch 200 https://registry.npmjs.org/tap-results/-/tap-results-0.0.2.tgz
+413 silly fetchAndShaCheck shasum a124dfe7a4b66279c6f65aedc54ec5977464268b
+414 verbose addTmpTarball C:\Users\Brett\AppData\Local\Temp\npm-557420-daffbe78\registry.npmjs.org\tap-results\-\tap-results-0.0.2.tgz not in flight; adding
+415 verbose addTmpTarball already have metadata; skipping unpack for tap-results@0.0.2
+416 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+417 silly cache afterAdd tap-results@0.0.2
+418 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\tap-results\0.0.2\package\package.json not in flight; writing
+419 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+420 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\tap-results\0.0.2\package\package.json written
+421 silly fetchNamedPackageData inherits
+422 silly mapToRegistry name inherits
+423 silly mapToRegistry using default registry
+424 silly mapToRegistry registry https://registry.npmjs.org/
+425 silly mapToRegistry data Result {
+425 silly mapToRegistry   raw: 'inherits',
+425 silly mapToRegistry   scope: null,
+425 silly mapToRegistry   escapedName: 'inherits',
+425 silly mapToRegistry   name: 'inherits',
+425 silly mapToRegistry   rawSpec: '',
+425 silly mapToRegistry   spec: 'latest',
+425 silly mapToRegistry   type: 'tag' }
+426 silly mapToRegistry uri https://registry.npmjs.org/inherits
+427 silly resolveWithNewModule inherits@1.0.2 checking installable status
+428 silly cache add args [ 'inherits@~1.0.0', null ]
+429 verbose cache add spec inherits@~1.0.0
+430 silly cache add parsed spec Result {
+430 silly cache add   raw: 'inherits@~1.0.0',
+430 silly cache add   scope: null,
+430 silly cache add   escapedName: 'inherits',
+430 silly cache add   name: 'inherits',
+430 silly cache add   rawSpec: '~1.0.0',
+430 silly cache add   spec: '>=1.0.0 <1.1.0',
+430 silly cache add   type: 'range' }
+431 silly addNamed inherits@>=1.0.0 <1.1.0
+432 verbose addNamed ">=1.0.0 <1.1.0" is a valid semver range for inherits
+433 silly addNameRange { name: 'inherits', range: '>=1.0.0 <1.1.0', hasData: false }
+434 silly mapToRegistry name inherits
+435 silly mapToRegistry using default registry
+436 silly mapToRegistry registry https://registry.npmjs.org/
+437 silly mapToRegistry data Result {
+437 silly mapToRegistry   raw: 'inherits',
+437 silly mapToRegistry   scope: null,
+437 silly mapToRegistry   escapedName: 'inherits',
+437 silly mapToRegistry   name: 'inherits',
+437 silly mapToRegistry   rawSpec: '',
+437 silly mapToRegistry   spec: 'latest',
+437 silly mapToRegistry   type: 'tag' }
+438 silly mapToRegistry uri https://registry.npmjs.org/inherits
+439 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+440 verbose get https://registry.npmjs.org/inherits not expired, no request
+441 silly addNameRange number 2 { name: 'inherits', range: '>=1.0.0 <1.1.0', hasData: true }
+442 silly addNameRange versions [ 'inherits',
+442 silly addNameRange   [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2', '2.0.3' ] ]
+443 silly addNamed inherits@1.0.2
+444 verbose addNamed "1.0.2" is a plain semver version for inherits
+445 silly mapToRegistry name inherits
+446 silly mapToRegistry using default registry
+447 silly mapToRegistry registry https://registry.npmjs.org/
+448 silly mapToRegistry data Result {
+448 silly mapToRegistry   raw: 'inherits',
+448 silly mapToRegistry   scope: null,
+448 silly mapToRegistry   escapedName: 'inherits',
+448 silly mapToRegistry   name: 'inherits',
+448 silly mapToRegistry   rawSpec: '',
+448 silly mapToRegistry   spec: 'latest',
+448 silly mapToRegistry   type: 'tag' }
+449 silly mapToRegistry uri https://registry.npmjs.org/inherits
+450 verbose addRemoteTarball https://registry.npmjs.org/inherits/-/inherits-1.0.2.tgz not in flight; adding
+451 verbose addRemoteTarball [ 'https://registry.npmjs.org/inherits/-/inherits-1.0.2.tgz',
+451 verbose addRemoteTarball   'ca4309dadee6b54cc0b8d247e8d7c7a0975bdc9b' ]
+452 info retry fetch attempt 1 at 2:15:45 PM
+453 info attempt registry request try #1 at 2:15:45 PM
+454 http fetch GET https://registry.npmjs.org/inherits/-/inherits-1.0.2.tgz
+455 http fetch 200 https://registry.npmjs.org/inherits/-/inherits-1.0.2.tgz
+456 silly fetchAndShaCheck shasum ca4309dadee6b54cc0b8d247e8d7c7a0975bdc9b
+457 verbose addTmpTarball C:\Users\Brett\AppData\Local\Temp\npm-557420-daffbe78\registry.npmjs.org\inherits\-\inherits-1.0.2.tgz not in flight; adding
+458 verbose addTmpTarball already have metadata; skipping unpack for inherits@1.0.2
+459 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+460 silly cache afterAdd inherits@1.0.2
+461 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\inherits\1.0.2\package\package.json not in flight; writing
+462 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+463 verbose afterAdd C:\Users\Brett\AppData\Roaming\npm-cache\inherits\1.0.2\package\package.json written
+464 silly fetchNamedPackageData readable-stream
+465 silly mapToRegistry name readable-stream
+466 silly mapToRegistry using default registry
+467 silly mapToRegistry registry https://registry.npmjs.org/
+468 silly mapToRegistry data Result {
+468 silly mapToRegistry   raw: 'readable-stream',
+468 silly mapToRegistry   scope: null,
+468 silly mapToRegistry   escapedName: 'readable-stream',
+468 silly mapToRegistry   name: 'readable-stream',
+468 silly mapToRegistry   rawSpec: '',
+468 silly mapToRegistry   spec: 'latest',
+468 silly mapToRegistry   type: 'tag' }
+469 silly mapToRegistry uri https://registry.npmjs.org/readable-stream
+470 silly resolveWithNewModule readable-stream@1.1.14 checking installable status
+471 silly loadAllDepsIntoIdealTree Finishing
+472 silly loadIdealTree Finishing
+473 silly currentTree 3dmol@1.1.2
+473 silly currentTree +-- escape-string-regexp@1.0.2
+473 silly currentTree +-- grunt-closure-compiler@0.0.21
+473 silly currentTree +-- grunt-concurrent@0.5.0
+473 silly currentTree | +-- async@0.2.10
+473 silly currentTree | `-- pad-stdio@0.1.1
+473 silly currentTree |   `-- lpad@0.2.1
+473 silly currentTree +-- grunt-contrib-clean@0.5.0
+473 silly currentTree | `-- rimraf@2.2.8
+473 silly currentTree +-- grunt-contrib-concat@0.4.0
+473 silly currentTree | `-- chalk@0.4.0
+473 silly currentTree |   +-- ansi-styles@1.0.0
+473 silly currentTree |   +-- has-color@0.1.7
+473 silly currentTree |   `-- strip-ansi@0.1.1
+473 silly currentTree +-- grunt-contrib-copy@0.5.0
+473 silly currentTree +-- grunt-contrib-jshint@0.10.0
+473 silly currentTree | +-- hooker@0.2.3
+473 silly currentTree | `-- jshint@2.5.1
+473 silly currentTree |   +-- cli@0.6.3
+473 silly currentTree |   | `-- glob@3.2.11
+473 silly currentTree |   |   `-- inherits@2.0.1
+473 silly currentTree |   +-- console-browserify@1.1.0
+473 silly currentTree |   | `-- date-now@0.1.4
+473 silly currentTree |   +-- exit@0.1.2
+473 silly currentTree |   +-- htmlparser2@3.7.2
+473 silly currentTree |   | +-- domelementtype@1.1.1
+473 silly currentTree |   | +-- domhandler@2.2.0
+473 silly currentTree |   | +-- domutils@1.5.0
+473 silly currentTree |   | +-- entities@1.0.0
+473 silly currentTree |   | `-- readable-stream@1.1.13-1
+473 silly currentTree |   |   +-- core-util-is@1.0.1
+473 silly currentTree |   |   +-- inherits@2.0.1
+473 silly currentTree |   |   +-- isarray@0.0.1
+473 silly currentTree |   |   `-- string_decoder@0.10.25-1
+473 silly currentTree |   +-- minimatch@0.3.0
+473 silly currentTree |   | +-- lru-cache@2.5.0
+473 silly currentTree |   | `-- sigmund@1.0.0
+473 silly currentTree |   +-- shelljs@0.3.0
+473 silly currentTree |   +-- strip-json-comments@0.1.3
+473 silly currentTree |   `-- underscore@1.6.0
+473 silly currentTree +-- grunt-contrib-nodeunit@0.4.0
+473 silly currentTree | +-- hooker@0.2.3
+473 silly currentTree | `-- nodeunit@0.9.0
+473 silly currentTree |   `-- tap@0.4.11
+473 silly currentTree |     +-- buffer-equal@0.0.1
+473 silly currentTree |     +-- deep-equal@0.0.0
+473 silly currentTree |     +-- difflet@0.2.6
+473 silly currentTree |     | +-- charm@0.1.2
+473 silly currentTree |     | +-- deep-is@0.1.2
+473 silly currentTree |     | `-- traverse@0.6.6
+473 silly currentTree |     +-- glob@3.2.11
+473 silly currentTree |     | +-- inherits@2.0.1
+473 silly currentTree |     | `-- minimatch@0.3.0
+473 silly currentTree |     |   +-- lru-cache@2.5.0
+473 silly currentTree |     |   `-- sigmund@1.0.0
+473 silly currentTree |     +-- inherits@2.0.1
+473 silly currentTree |     +-- mkdirp@0.3.5
+473 silly currentTree |     +-- nopt@2.2.1
+473 silly currentTree |     | `-- abbrev@1.0.5
+473 silly currentTree |     +-- runforcover@0.0.2
+473 silly currentTree |     | `-- bunker@0.1.2
+473 silly currentTree |     |   `-- burrito@0.2.12
+473 silly currentTree |     |     +-- traverse@0.5.2
+473 silly currentTree |     |     `-- uglify-js@1.1.1
+473 silly currentTree |     +-- slide@1.1.5
+473 silly currentTree |     `-- yamlish@0.0.5
+473 silly currentTree +-- grunt-contrib-uglify@0.5.0
+473 silly currentTree | +-- chalk@0.4.0
+473 silly currentTree | | +-- ansi-styles@1.0.0
+473 silly currentTree | | +-- has-color@0.1.7
+473 silly currentTree | | `-- strip-ansi@0.1.1
+473 silly currentTree | +-- lodash@2.4.1
+473 silly currentTree | +-- maxmin@0.1.0
+473 silly currentTree | | +-- gzip-size@0.1.1
+473 silly currentTree | | | +-- concat-stream@1.4.6
+473 silly currentTree | | | | +-- inherits@2.0.1
+473 silly currentTree | | | | +-- readable-stream@1.1.13-1
+473 silly currentTree | | | | | +-- core-util-is@1.0.1
+473 silly currentTree | | | | | +-- isarray@0.0.1
+473 silly currentTree | | | | | `-- string_decoder@0.10.25-1
+473 silly currentTree | | | | `-- typedarray@0.0.6
+473 silly currentTree | | | `-- zlib-browserify@0.0.3
+473 silly currentTree | | |   `-- tape@0.2.2
+473 silly currentTree | | |     +-- deep-equal@0.0.0
+473 silly currentTree | | |     +-- defined@0.0.0
+473 silly currentTree | | |     `-- jsonify@0.0.0
+473 silly currentTree | | `-- pretty-bytes@0.1.1
+473 silly currentTree | `-- uglify-js@2.4.14
+473 silly currentTree |   +-- async@0.2.10
+473 silly currentTree |   +-- optimist@0.3.7
+473 silly currentTree |   | `-- wordwrap@0.0.2
+473 silly currentTree |   +-- source-map@0.1.34
+473 silly currentTree |   | `-- amdefine@0.1.0
+473 silly currentTree |   `-- uglify-to-browserify@1.0.2
+473 silly currentTree +-- grunt-node-inspector@0.1.5
+473 silly currentTree | `-- node-inspector@0.7.4
+473 silly currentTree |   +-- async@0.8.0
+473 silly currentTree |   +-- debug@0.8.1
+473 silly currentTree |   +-- express@4.0.0
+473 silly currentTree |   | +-- accepts@1.0.0
+473 silly currentTree |   | | +-- mime@1.2.11
+473 silly currentTree |   | | `-- negotiator@0.3.0
+473 silly currentTree |   | +-- buffer-crc32@0.2.1
+473 silly currentTree |   | +-- cookie-signature@1.0.3
+473 silly currentTree |   | +-- cookie@0.1.0
+473 silly currentTree |   | +-- escape-html@1.0.1
+473 silly currentTree |   | +-- fresh@0.2.2
+473 silly currentTree |   | +-- merge-descriptors@0.0.2
+473 silly currentTree |   | +-- methods@0.1.0
+473 silly currentTree |   | +-- parseurl@1.0.1
+473 silly currentTree |   | +-- path-to-regexp@0.1.2
+473 silly currentTree |   | +-- qs@0.6.6
+473 silly currentTree |   | +-- range-parser@1.0.0
+473 silly currentTree |   | +-- send@0.2.0
+473 silly currentTree |   | | `-- mime@1.2.11
+473 silly currentTree |   | +-- serve-static@1.0.1
+473 silly currentTree |   | | `-- send@0.1.4
+473 silly currentTree |   | |   +-- fresh@0.2.0
+473 silly currentTree |   | |   +-- mime@1.2.11
+473 silly currentTree |   | |   `-- range-parser@0.0.4
+473 silly currentTree |   | +-- type-is@1.0.0
+473 silly currentTree |   | | `-- mime@1.2.11
+473 silly currentTree |   | `-- utils-merge@1.0.0
+473 silly currentTree |   +-- glob@3.2.11
+473 silly currentTree |   | +-- inherits@2.0.1
+473 silly currentTree |   | `-- minimatch@0.3.0
+473 silly currentTree |   |   +-- lru-cache@2.5.0
+473 silly currentTree |   |   `-- sigmund@1.0.0
+473 silly currentTree |   +-- opener@1.3.0
+473 silly currentTree |   +-- rc@0.3.5
+473 silly currentTree |   | +-- deep-extend@0.2.10
+473 silly currentTree |   | +-- ini@1.1.0
+473 silly currentTree |   | `-- minimist@0.0.10
+473 silly currentTree |   +-- strong-data-uri@0.1.1
+473 silly currentTree |   | `-- truncate@1.0.2
+473 silly currentTree |   +-- which@1.0.5
+473 silly currentTree |   +-- ws@0.4.31
+473 silly currentTree |   | +-- commander@0.6.1
+473 silly currentTree |   | +-- nan@0.3.2
+473 silly currentTree |   | +-- options@0.0.5
+473 silly currentTree |   | `-- tinycolor@0.0.1
+473 silly currentTree |   `-- yargs@1.2.6
+473 silly currentTree |     `-- minimist@0.1.0
+473 silly currentTree +-- grunt-shell@0.7.0
+473 silly currentTree | `-- chalk@0.4.0
+473 silly currentTree |   +-- ansi-styles@1.0.0
+473 silly currentTree |   +-- has-color@0.1.7
+473 silly currentTree |   `-- strip-ansi@0.1.1
+473 silly currentTree +-- grunt@0.4.5
+473 silly currentTree | +-- async@0.1.22
+473 silly currentTree | +-- coffee-script@1.3.3
+473 silly currentTree | +-- colors@0.6.2
+473 silly currentTree | +-- dateformat@1.0.2-1.2.3
+473 silly currentTree | +-- eventemitter2@0.4.14
+473 silly currentTree | +-- exit@0.1.2
+473 silly currentTree | +-- findup-sync@0.1.3
+473 silly currentTree | | +-- glob@3.2.11
+473 silly currentTree | | | +-- inherits@2.0.1
+473 silly currentTree | | | `-- minimatch@0.3.0
+473 silly currentTree | | |   +-- lru-cache@2.5.0
+473 silly currentTree | | |   `-- sigmund@1.0.0
+473 silly currentTree | | `-- lodash@2.4.1
+473 silly currentTree | +-- getobject@0.1.0
+473 silly currentTree | +-- glob@3.1.21
+473 silly currentTree | | +-- graceful-fs@1.2.3
+473 silly currentTree | | `-- inherits@1.0.0
+473 silly currentTree | +-- grunt-legacy-log@0.1.1
+473 silly currentTree | | +-- lodash@2.4.1
+473 silly currentTree | | `-- underscore.string@2.3.3
+473 silly currentTree | +-- grunt-legacy-util@0.2.0
+473 silly currentTree | +-- hooker@0.2.3
+473 silly currentTree | +-- iconv-lite@0.2.11
+473 silly currentTree | +-- js-yaml@2.0.5
+473 silly currentTree | | +-- argparse@0.1.15
+473 silly currentTree | | | +-- underscore.string@2.3.3
+473 silly currentTree | | | `-- underscore@1.4.4
+473 silly currentTree | | `-- esprima@1.0.4
+473 silly currentTree | +-- lodash@0.9.2
+473 silly currentTree | +-- minimatch@0.2.14
+473 silly currentTree | | +-- lru-cache@2.5.0
+473 silly currentTree | | `-- sigmund@1.0.0
+473 silly currentTree | +-- nopt@1.0.10
+473 silly currentTree | | `-- abbrev@1.0.5
+473 silly currentTree | +-- rimraf@2.2.8
+473 silly currentTree | +-- underscore.string@2.2.1
+473 silly currentTree | `-- which@1.0.5
+473 silly currentTree +-- jsdoc@3.3.0-dev
+473 silly currentTree | +-- async@0.1.22
+473 silly currentTree | +-- catharsis@0.8.2
+473 silly currentTree | | `-- underscore-contrib@0.3.0
+473 silly currentTree | +-- esprima@1.1.0-dev-harmony
+473 silly currentTree | +-- js2xmlparser@0.1.0
+473 silly currentTree | +-- marked@0.3.1
+473 silly currentTree | +-- requizzle@0.2.0
+473 silly currentTree | +-- strip-json-comments@0.1.3
+473 silly currentTree | +-- taffydb@2.6.2
+473 silly currentTree | +-- underscore@1.6.0
+473 silly currentTree | `-- wrench@1.3.9
+473 silly currentTree `-- resemblejs@2.2.2
+474 silly idealTree 3dmol@1.1.2
+474 silly idealTree +-- core-util-is@1.0.2
+474 silly idealTree +-- escape-string-regexp@1.0.2
+474 silly idealTree +-- grunt-closure-compiler@0.0.21
+474 silly idealTree +-- grunt-concurrent@0.5.0
+474 silly idealTree | +-- async@0.2.10
+474 silly idealTree | `-- pad-stdio@0.1.1
+474 silly idealTree |   `-- lpad@0.2.1
+474 silly idealTree +-- grunt-contrib-clean@0.5.0
+474 silly idealTree | `-- rimraf@2.2.8
+474 silly idealTree +-- grunt-contrib-concat@0.4.0
+474 silly idealTree | `-- chalk@0.4.0
+474 silly idealTree |   +-- ansi-styles@1.0.0
+474 silly idealTree |   +-- has-color@0.1.7
+474 silly idealTree |   `-- strip-ansi@0.1.1
+474 silly idealTree +-- grunt-contrib-copy@0.5.0
+474 silly idealTree +-- grunt-contrib-jshint@0.10.0
+474 silly idealTree | +-- hooker@0.2.3
+474 silly idealTree | `-- jshint@2.5.1
+474 silly idealTree |   +-- cli@0.6.3
+474 silly idealTree |   | `-- glob@3.2.11
+474 silly idealTree |   |   `-- inherits@2.0.1
+474 silly idealTree |   +-- console-browserify@1.1.0
+474 silly idealTree |   | `-- date-now@0.1.4
+474 silly idealTree |   +-- exit@0.1.2
+474 silly idealTree |   +-- htmlparser2@3.7.2
+474 silly idealTree |   | +-- domelementtype@1.1.1
+474 silly idealTree |   | +-- domhandler@2.2.0
+474 silly idealTree |   | +-- domutils@1.5.0
+474 silly idealTree |   | +-- entities@1.0.0
+474 silly idealTree |   | `-- readable-stream@1.1.14
+474 silly idealTree |   +-- minimatch@0.3.0
+474 silly idealTree |   | +-- lru-cache@2.5.0
+474 silly idealTree |   | `-- sigmund@1.0.0
+474 silly idealTree |   +-- shelljs@0.3.0
+474 silly idealTree |   +-- strip-json-comments@0.1.3
+474 silly idealTree |   `-- underscore@1.6.0
+474 silly idealTree +-- grunt-contrib-nodeunit@0.4.0
+474 silly idealTree | +-- hooker@0.2.3
+474 silly idealTree | `-- nodeunit@0.9.0
+474 silly idealTree |   `-- tap@0.4.11
+474 silly idealTree |     +-- buffer-equal@0.0.1
+474 silly idealTree |     +-- deep-equal@0.0.0
+474 silly idealTree |     +-- difflet@0.2.6
+474 silly idealTree |     | +-- charm@0.1.2
+474 silly idealTree |     | +-- deep-is@0.1.2
+474 silly idealTree |     | `-- traverse@0.6.6
+474 silly idealTree |     +-- glob@3.2.11
+474 silly idealTree |     | +-- inherits@2.0.1
+474 silly idealTree |     | `-- minimatch@0.3.0
+474 silly idealTree |     |   +-- lru-cache@2.5.0
+474 silly idealTree |     |   `-- sigmund@1.0.0
+474 silly idealTree |     +-- inherits@2.0.1
+474 silly idealTree |     +-- mkdirp@0.3.5
+474 silly idealTree |     +-- nopt@2.2.1
+474 silly idealTree |     | `-- abbrev@1.0.5
+474 silly idealTree |     +-- runforcover@0.0.2
+474 silly idealTree |     | `-- bunker@0.1.2
+474 silly idealTree |     |   `-- burrito@0.2.12
+474 silly idealTree |     |     +-- traverse@0.5.2
+474 silly idealTree |     |     `-- uglify-js@1.1.1
+474 silly idealTree |     +-- slide@1.1.5
+474 silly idealTree |     `-- yamlish@0.0.5
+474 silly idealTree +-- grunt-contrib-uglify@0.5.0
+474 silly idealTree | +-- chalk@0.4.0
+474 silly idealTree | | +-- ansi-styles@1.0.0
+474 silly idealTree | | +-- has-color@0.1.7
+474 silly idealTree | | `-- strip-ansi@0.1.1
+474 silly idealTree | +-- lodash@2.4.1
+474 silly idealTree | +-- maxmin@0.1.0
+474 silly idealTree | | +-- gzip-size@0.1.1
+474 silly idealTree | | | +-- concat-stream@1.4.6
+474 silly idealTree | | | | +-- inherits@2.0.1
+474 silly idealTree | | | | +-- readable-stream@1.1.14
+474 silly idealTree | | | | `-- typedarray@0.0.6
+474 silly idealTree | | | `-- zlib-browserify@0.0.3
+474 silly idealTree | | |   `-- tape@0.2.2
+474 silly idealTree | | |     +-- deep-equal@0.0.0
+474 silly idealTree | | |     +-- defined@0.0.0
+474 silly idealTree | | |     `-- jsonify@0.0.0
+474 silly idealTree | | `-- pretty-bytes@0.1.1
+474 silly idealTree | `-- uglify-js@2.4.14
+474 silly idealTree |   +-- async@0.2.10
+474 silly idealTree |   +-- optimist@0.3.7
+474 silly idealTree |   | `-- wordwrap@0.0.2
+474 silly idealTree |   +-- source-map@0.1.34
+474 silly idealTree |   | `-- amdefine@0.1.0
+474 silly idealTree |   `-- uglify-to-browserify@1.0.2
+474 silly idealTree +-- grunt-node-inspector@0.1.5
+474 silly idealTree | `-- node-inspector@0.7.4
+474 silly idealTree |   +-- async@0.8.0
+474 silly idealTree |   +-- debug@0.8.1
+474 silly idealTree |   +-- express@4.0.0
+474 silly idealTree |   | +-- accepts@1.0.0
+474 silly idealTree |   | | +-- mime@1.2.11
+474 silly idealTree |   | | `-- negotiator@0.3.0
+474 silly idealTree |   | +-- buffer-crc32@0.2.1
+474 silly idealTree |   | +-- cookie-signature@1.0.3
+474 silly idealTree |   | +-- cookie@0.1.0
+474 silly idealTree |   | +-- escape-html@1.0.1
+474 silly idealTree |   | +-- fresh@0.2.2
+474 silly idealTree |   | +-- merge-descriptors@0.0.2
+474 silly idealTree |   | +-- methods@0.1.0
+474 silly idealTree |   | +-- parseurl@1.0.1
+474 silly idealTree |   | +-- path-to-regexp@0.1.2
+474 silly idealTree |   | +-- qs@0.6.6
+474 silly idealTree |   | +-- range-parser@1.0.0
+474 silly idealTree |   | +-- send@0.2.0
+474 silly idealTree |   | | `-- mime@1.2.11
+474 silly idealTree |   | +-- serve-static@1.0.1
+474 silly idealTree |   | | `-- send@0.1.4
+474 silly idealTree |   | |   +-- fresh@0.2.0
+474 silly idealTree |   | |   +-- mime@1.2.11
+474 silly idealTree |   | |   `-- range-parser@0.0.4
+474 silly idealTree |   | +-- type-is@1.0.0
+474 silly idealTree |   | | `-- mime@1.2.11
+474 silly idealTree |   | `-- utils-merge@1.0.0
+474 silly idealTree |   +-- glob@3.2.11
+474 silly idealTree |   | +-- inherits@2.0.1
+474 silly idealTree |   | `-- minimatch@0.3.0
+474 silly idealTree |   |   +-- lru-cache@2.5.0
+474 silly idealTree |   |   `-- sigmund@1.0.0
+474 silly idealTree |   +-- opener@1.3.0
+474 silly idealTree |   +-- rc@0.3.5
+474 silly idealTree |   | +-- deep-extend@0.2.10
+474 silly idealTree |   | +-- ini@1.1.0
+474 silly idealTree |   | `-- minimist@0.0.10
+474 silly idealTree |   +-- strong-data-uri@0.1.1
+474 silly idealTree |   | `-- truncate@1.0.2
+474 silly idealTree |   +-- which@1.0.5
+474 silly idealTree |   +-- ws@0.4.31
+474 silly idealTree |   | +-- commander@0.6.1
+474 silly idealTree |   | +-- nan@0.3.2
+474 silly idealTree |   | +-- options@0.0.5
+474 silly idealTree |   | `-- tinycolor@0.0.1
+474 silly idealTree |   `-- yargs@1.2.6
+474 silly idealTree |     `-- minimist@0.1.0
+474 silly idealTree +-- grunt-shell@0.7.0
+474 silly idealTree | `-- chalk@0.4.0
+474 silly idealTree |   +-- ansi-styles@1.0.0
+474 silly idealTree |   +-- has-color@0.1.7
+474 silly idealTree |   `-- strip-ansi@0.1.1
+474 silly idealTree +-- grunt@0.4.5
+474 silly idealTree | +-- async@0.1.22
+474 silly idealTree | +-- coffee-script@1.3.3
+474 silly idealTree | +-- colors@0.6.2
+474 silly idealTree | +-- dateformat@1.0.2-1.2.3
+474 silly idealTree | +-- eventemitter2@0.4.14
+474 silly idealTree | +-- exit@0.1.2
+474 silly idealTree | +-- findup-sync@0.1.3
+474 silly idealTree | | +-- glob@3.2.11
+474 silly idealTree | | | +-- inherits@2.0.1
+474 silly idealTree | | | `-- minimatch@0.3.0
+474 silly idealTree | | |   +-- lru-cache@2.5.0
+474 silly idealTree | | |   `-- sigmund@1.0.0
+474 silly idealTree | | `-- lodash@2.4.1
+474 silly idealTree | +-- getobject@0.1.0
+474 silly idealTree | +-- glob@3.1.21
+474 silly idealTree | | +-- graceful-fs@1.2.3
+474 silly idealTree | | `-- inherits@1.0.0
+474 silly idealTree | +-- grunt-legacy-log@0.1.1
+474 silly idealTree | | +-- lodash@2.4.1
+474 silly idealTree | | `-- underscore.string@2.3.3
+474 silly idealTree | +-- grunt-legacy-util@0.2.0
+474 silly idealTree | +-- hooker@0.2.3
+474 silly idealTree | +-- iconv-lite@0.2.11
+474 silly idealTree | +-- js-yaml@2.0.5
+474 silly idealTree | | +-- argparse@0.1.15
+474 silly idealTree | | | +-- underscore.string@2.3.3
+474 silly idealTree | | | `-- underscore@1.4.4
+474 silly idealTree | | `-- esprima@1.0.4
+474 silly idealTree | +-- lodash@0.9.2
+474 silly idealTree | +-- minimatch@0.2.14
+474 silly idealTree | | +-- lru-cache@2.5.0
+474 silly idealTree | | `-- sigmund@1.0.0
+474 silly idealTree | +-- nopt@1.0.10
+474 silly idealTree | | `-- abbrev@1.0.5
+474 silly idealTree | +-- rimraf@2.2.8
+474 silly idealTree | +-- underscore.string@2.2.1
+474 silly idealTree | `-- which@1.0.5
+474 silly idealTree +-- inherits@2.0.3
+474 silly idealTree +-- isarray@0.0.1
+474 silly idealTree +-- jsdoc@3.3.0-dev
+474 silly idealTree | +-- async@0.1.22
+474 silly idealTree | +-- catharsis@0.8.2
+474 silly idealTree | | `-- underscore-contrib@0.3.0
+474 silly idealTree | +-- esprima@1.1.0-dev-harmony
+474 silly idealTree | +-- js2xmlparser@0.1.0
+474 silly idealTree | +-- marked@0.3.1
+474 silly idealTree | +-- requizzle@0.2.0
+474 silly idealTree | +-- strip-json-comments@0.1.3
+474 silly idealTree | +-- taffydb@2.6.2
+474 silly idealTree | +-- underscore@1.6.0
+474 silly idealTree | `-- wrench@1.3.9
+474 silly idealTree +-- resemblejs@2.2.2
+474 silly idealTree +-- string_decoder@0.10.31
+474 silly idealTree +-- tap-consumer@0.0.1
+474 silly idealTree +-- tap-results@0.0.2
+474 silly idealTree | `-- inherits@1.0.2
+474 silly idealTree `-- yamlish@0.0.7
+475 silly generateActionsToTake Starting
+476 silly install generateActionsToTake
+477 silly generateActionsToTake Finishing
+478 silly diffTrees action count 16
+479 silly diffTrees add core-util-is@1.0.2
+480 silly diffTrees remove core-util-is@1.0.1
+481 silly diffTrees remove inherits@2.0.1
+482 silly diffTrees remove core-util-is@1.0.1
+483 silly diffTrees remove isarray@0.0.1
+484 silly diffTrees add inherits@2.0.3
+485 silly diffTrees move isarray@0.0.1
+486 silly diffTrees add string_decoder@0.10.31
+487 silly diffTrees update readable-stream@1.1.14
+488 silly diffTrees update readable-stream@1.1.14
+489 silly diffTrees add inherits@1.0.2
+490 silly diffTrees add tap-results@0.0.2
+491 silly diffTrees add yamlish@0.0.7
+492 silly diffTrees add tap-consumer@0.0.1
+493 silly diffTrees remove string_decoder@0.10.25-1
+494 silly diffTrees remove string_decoder@0.10.25-1
+495 silly decomposeActions action count 85
+496 silly decomposeActions fetch core-util-is@1.0.2
+497 silly decomposeActions extract core-util-is@1.0.2
+498 silly decomposeActions test core-util-is@1.0.2
+499 silly decomposeActions preinstall core-util-is@1.0.2
+500 silly decomposeActions build core-util-is@1.0.2
+501 silly decomposeActions install core-util-is@1.0.2
+502 silly decomposeActions postinstall core-util-is@1.0.2
+503 silly decomposeActions finalize core-util-is@1.0.2
+504 silly decomposeActions remove core-util-is@1.0.1
+505 silly decomposeActions remove inherits@2.0.1
+506 silly decomposeActions remove core-util-is@1.0.1
+507 silly decomposeActions remove isarray@0.0.1
+508 silly decomposeActions fetch inherits@2.0.3
+509 silly decomposeActions extract inherits@2.0.3
+510 silly decomposeActions test inherits@2.0.3
+511 silly decomposeActions preinstall inherits@2.0.3
+512 silly decomposeActions build inherits@2.0.3
+513 silly decomposeActions install inherits@2.0.3
+514 silly decomposeActions postinstall inherits@2.0.3
+515 silly decomposeActions finalize inherits@2.0.3
+516 silly decomposeActions move isarray@0.0.1
+517 silly decomposeActions build isarray@0.0.1
+518 silly decomposeActions install isarray@0.0.1
+519 silly decomposeActions postinstall isarray@0.0.1
+520 silly decomposeActions test isarray@0.0.1
+521 silly decomposeActions fetch string_decoder@0.10.31
+522 silly decomposeActions extract string_decoder@0.10.31
+523 silly decomposeActions test string_decoder@0.10.31
+524 silly decomposeActions preinstall string_decoder@0.10.31
+525 silly decomposeActions build string_decoder@0.10.31
+526 silly decomposeActions install string_decoder@0.10.31
+527 silly decomposeActions postinstall string_decoder@0.10.31
+528 silly decomposeActions finalize string_decoder@0.10.31
+529 silly decomposeActions remove readable-stream@1.1.14
+530 silly decomposeActions fetch readable-stream@1.1.14
+531 silly decomposeActions extract readable-stream@1.1.14
+532 silly decomposeActions test readable-stream@1.1.14
+533 silly decomposeActions preinstall readable-stream@1.1.14
+534 silly decomposeActions build readable-stream@1.1.14
+535 silly decomposeActions install readable-stream@1.1.14
+536 silly decomposeActions postinstall readable-stream@1.1.14
+537 silly decomposeActions finalize readable-stream@1.1.14
+538 silly decomposeActions remove readable-stream@1.1.14
+539 silly decomposeActions fetch readable-stream@1.1.14
+540 silly decomposeActions extract readable-stream@1.1.14
+541 silly decomposeActions test readable-stream@1.1.14
+542 silly decomposeActions preinstall readable-stream@1.1.14
+543 silly decomposeActions build readable-stream@1.1.14
+544 silly decomposeActions install readable-stream@1.1.14
+545 silly decomposeActions postinstall readable-stream@1.1.14
+546 silly decomposeActions finalize readable-stream@1.1.14
+547 silly decomposeActions fetch inherits@1.0.2
+548 silly decomposeActions extract inherits@1.0.2
+549 silly decomposeActions test inherits@1.0.2
+550 silly decomposeActions preinstall inherits@1.0.2
+551 silly decomposeActions build inherits@1.0.2
+552 silly decomposeActions install inherits@1.0.2
+553 silly decomposeActions postinstall inherits@1.0.2
+554 silly decomposeActions finalize inherits@1.0.2
+555 silly decomposeActions fetch tap-results@0.0.2
+556 silly decomposeActions extract tap-results@0.0.2
+557 silly decomposeActions test tap-results@0.0.2
+558 silly decomposeActions preinstall tap-results@0.0.2
+559 silly decomposeActions build tap-results@0.0.2
+560 silly decomposeActions install tap-results@0.0.2
+561 silly decomposeActions postinstall tap-results@0.0.2
+562 silly decomposeActions finalize tap-results@0.0.2
+563 silly decomposeActions fetch yamlish@0.0.7
+564 silly decomposeActions extract yamlish@0.0.7
+565 silly decomposeActions test yamlish@0.0.7
+566 silly decomposeActions preinstall yamlish@0.0.7
+567 silly decomposeActions build yamlish@0.0.7
+568 silly decomposeActions install yamlish@0.0.7
+569 silly decomposeActions postinstall yamlish@0.0.7
+570 silly decomposeActions finalize yamlish@0.0.7
+571 silly decomposeActions fetch tap-consumer@0.0.1
+572 silly decomposeActions extract tap-consumer@0.0.1
+573 silly decomposeActions test tap-consumer@0.0.1
+574 silly decomposeActions preinstall tap-consumer@0.0.1
+575 silly decomposeActions build tap-consumer@0.0.1
+576 silly decomposeActions install tap-consumer@0.0.1
+577 silly decomposeActions postinstall tap-consumer@0.0.1
+578 silly decomposeActions finalize tap-consumer@0.0.1
+579 silly decomposeActions remove string_decoder@0.10.25-1
+580 silly decomposeActions remove string_decoder@0.10.25-1
+581 silly runTopLevelLifecycles Starting
+582 silly install runPreinstallTopLevelLifecycles
+583 silly preinstall 3dmol@1.1.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\3dmol-f2b68da3
+584 info lifecycle 3dmol@1.1.2~preinstall: 3dmol@1.1.2
+585 silly lifecycle 3dmol@1.1.2~preinstall: no script for preinstall, continuing
+586 silly executeActions Starting
+587 silly install executeActions
+588 silly doSerial global-install 0
+589 silly doParallel fetch 9
+590 verbose correctMkdir C:\Users\Brett\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+591 verbose lock using C:\Users\Brett\AppData\Roaming\npm-cache\_locks\staging-1aba5698c07fb098.lock for C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging
+592 silly doParallel extract 9
+593 silly extract core-util-is@1.0.2
+594 silly extract inherits@2.0.3
+595 silly extract string_decoder@0.10.31
+596 silly extract readable-stream@1.1.14
+597 silly extract readable-stream@1.1.14
+598 silly extract inherits@1.0.2
+599 silly extract tap-results@0.0.2
+600 silly extract yamlish@0.0.7
+601 silly extract tap-consumer@0.0.1
+602 verbose unbuild node_modules\.staging\readable-stream-447fc21d
+603 verbose unbuild node_modules\.staging\core-util-is-1bbf2582
+604 verbose unbuild node_modules\.staging\readable-stream-c8506954
+605 verbose unbuild node_modules\.staging\inherits-29e4534c
+606 verbose unbuild node_modules\.staging\string_decoder-3a896276
+607 verbose unbuild node_modules\.staging\inherits-77e02072
+608 verbose unbuild node_modules\.staging\yamlish-44a835cc
+609 verbose unbuild node_modules\.staging\tap-consumer-83f28582
+610 verbose unbuild node_modules\.staging\tap-results-09115b35
+611 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+612 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d
+613 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582 is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+614 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582
+615 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954 is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+616 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954
+617 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+618 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c
+619 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276 is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+620 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276
+621 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072 is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+622 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072
+623 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+624 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc
+625 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582 is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+626 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582
+627 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35 is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+628 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35
+629 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\readable-stream\1.1.14\package.tgz
+630 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d
+631 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d is being purged
+632 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d
+633 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\core-util-is\1.0.2\package.tgz
+634 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582
+635 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582 is being purged
+636 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582
+637 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\readable-stream\1.1.14\package.tgz
+638 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954
+639 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954 is being purged
+640 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954
+641 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\inherits\1.0.2\package.tgz
+642 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c
+643 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c is being purged
+644 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c
+645 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\string_decoder\0.10.31\package.tgz
+646 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276
+647 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276 is being purged
+648 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276
+649 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\inherits\2.0.3\package.tgz
+650 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072
+651 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072 is being purged
+652 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072
+653 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\yamlish\0.0.7\package.tgz
+654 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc
+655 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc is being purged
+656 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc
+657 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\tap-consumer\0.0.1\package.tgz
+658 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582
+659 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582 is being purged
+660 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582
+661 verbose tar unpack C:\Users\Brett\AppData\Roaming\npm-cache\tap-results\0.0.2\package.tgz
+662 verbose tar unpacking to C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35
+663 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35 is being purged
+664 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35
+665 silly gunzTarPerm modes [ '777', '666' ]
+666 silly gunzTarPerm modes [ '777', '666' ]
+667 silly gunzTarPerm modes [ '777', '666' ]
+668 silly gunzTarPerm modes [ '777', '666' ]
+669 silly gunzTarPerm modes [ '777', '666' ]
+670 silly gunzTarPerm modes [ '777', '666' ]
+671 silly gunzTarPerm modes [ '777', '666' ]
+672 silly gunzTarPerm modes [ '777', '666' ]
+673 silly gunzTarPerm modes [ '777', '666' ]
+674 silly gunzTarPerm extractEntry package.json
+675 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+676 silly gunzTarPerm extractEntry package.json
+677 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+678 silly gunzTarPerm extractEntry package.json
+679 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+680 silly gunzTarPerm extractEntry package.json
+681 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+682 silly gunzTarPerm extractEntry package.json
+683 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+684 silly gunzTarPerm extractEntry package.json
+685 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+686 silly gunzTarPerm extractEntry package.json
+687 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+688 silly gunzTarPerm extractEntry package.json
+689 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+690 silly gunzTarPerm extractEntry package.json
+691 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+692 silly gunzTarPerm extractEntry .npmignore
+693 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+694 silly gunzTarPerm extractEntry README.md
+695 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+696 silly gunzTarPerm extractEntry .npmignore
+697 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+698 silly gunzTarPerm extractEntry README.md
+699 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+700 silly gunzTarPerm extractEntry README.md
+701 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+702 silly gunzTarPerm extractEntry LICENSE
+703 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+704 silly gunzTarPerm extractEntry .npmignore
+705 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+706 silly gunzTarPerm extractEntry README.md
+707 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+708 silly gunzTarPerm extractEntry README.md
+709 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+710 silly gunzTarPerm extractEntry LICENSE
+711 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+712 silly gunzTarPerm extractEntry README.md
+713 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+714 silly gunzTarPerm extractEntry LICENSE
+715 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+716 silly gunzTarPerm extractEntry README.md
+717 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+718 silly gunzTarPerm extractEntry LICENSE
+719 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+720 silly gunzTarPerm extractEntry README.md
+721 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+722 silly gunzTarPerm extractEntry tap-consumer.js
+723 silly gunzTarPerm modified mode [ 'tap-consumer.js', 420, 438 ]
+724 silly gunzTarPerm extractEntry README.md
+725 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+726 silly gunzTarPerm extractEntry results.js
+727 silly gunzTarPerm modified mode [ 'results.js', 420, 438 ]
+728 silly gunzTarPerm extractEntry inherits.js
+729 silly gunzTarPerm modified mode [ 'inherits.js', 420, 438 ]
+730 silly gunzTarPerm extractEntry yamlish.js
+731 silly gunzTarPerm modified mode [ 'yamlish.js', 420, 438 ]
+732 silly gunzTarPerm extractEntry yamlish-py/.npmignore
+733 silly gunzTarPerm modified mode [ 'yamlish-py/.npmignore', 420, 438 ]
+734 silly gunzTarPerm extractEntry test.js
+735 silly gunzTarPerm modified mode [ 'test.js', 420, 438 ]
+736 silly gunzTarPerm extractEntry float.patch
+737 silly gunzTarPerm modified mode [ 'float.patch', 420, 438 ]
+738 silly gunzTarPerm extractEntry LICENSE
+739 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+740 silly gunzTarPerm extractEntry duplex.js
+741 silly gunzTarPerm modified mode [ 'duplex.js', 420, 438 ]
+742 silly gunzTarPerm extractEntry LICENSE
+743 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+744 silly gunzTarPerm extractEntry duplex.js
+745 silly gunzTarPerm modified mode [ 'duplex.js', 420, 438 ]
+746 silly gunzTarPerm extractEntry LICENSE
+747 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+748 silly gunzTarPerm extractEntry index.js
+749 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+750 silly gunzTarPerm extractEntry inherits.js
+751 silly gunzTarPerm modified mode [ 'inherits.js', 420, 438 ]
+752 silly gunzTarPerm extractEntry inherits_browser.js
+753 silly gunzTarPerm modified mode [ 'inherits_browser.js', 420, 438 ]
+754 silly gunzTarPerm extractEntry lib/util.js
+755 silly gunzTarPerm modified mode [ 'lib/util.js', 420, 438 ]
+756 silly gunzTarPerm extractEntry writable.js
+757 silly gunzTarPerm modified mode [ 'writable.js', 420, 438 ]
+758 silly gunzTarPerm extractEntry passthrough.js
+759 silly gunzTarPerm modified mode [ 'passthrough.js', 420, 438 ]
+760 silly gunzTarPerm extractEntry yamlish-py/.travis.yml
+761 silly gunzTarPerm modified mode [ 'yamlish-py/.travis.yml', 420, 438 ]
+762 silly gunzTarPerm extractEntry yamlish-py/README.rst
+763 silly gunzTarPerm modified mode [ 'yamlish-py/README.rst', 420, 438 ]
+764 silly gunzTarPerm extractEntry writable.js
+765 silly gunzTarPerm modified mode [ 'writable.js', 420, 438 ]
+766 silly gunzTarPerm extractEntry passthrough.js
+767 silly gunzTarPerm modified mode [ 'passthrough.js', 420, 438 ]
+768 silly gunzTarPerm extractEntry yamlish-py/setup.py
+769 silly gunzTarPerm modified mode [ 'yamlish-py/setup.py', 420, 438 ]
+770 silly gunzTarPerm extractEntry yamlish-py/test/__init__.py
+771 silly gunzTarPerm modified mode [ 'yamlish-py/test/__init__.py', 420, 438 ]
+772 silly gunzTarPerm extractEntry yamlish-py/test/test_input.py
+773 silly gunzTarPerm modified mode [ 'yamlish-py/test/test_input.py', 420, 438 ]
+774 silly gunzTarPerm extractEntry yamlish-py/test/test_load.py
+775 silly gunzTarPerm modified mode [ 'yamlish-py/test/test_load.py', 420, 438 ]
+776 silly gunzTarPerm extractEntry yamlish-py/test/test_output.py
+777 silly gunzTarPerm modified mode [ 'yamlish-py/test/test_output.py', 420, 438 ]
+778 silly gunzTarPerm extractEntry yamlish-py/test/test_reader.py
+779 silly gunzTarPerm modified mode [ 'yamlish-py/test/test_reader.py', 420, 438 ]
+780 silly gunzTarPerm extractEntry yamlish-py/test/test_reader_nonUTF8.py
+781 silly gunzTarPerm modified mode [ 'yamlish-py/test/test_reader_nonUTF8.py', 420, 438 ]
+782 silly gunzTarPerm extractEntry yamlish-py/test/test_writer.py
+783 silly gunzTarPerm modified mode [ 'yamlish-py/test/test_writer.py', 420, 438 ]
+784 silly gunzTarPerm extractEntry yamlish-py/yamlish.py
+785 silly gunzTarPerm modified mode [ 'yamlish-py/yamlish.py', 420, 438 ]
+786 silly gunzTarPerm extractEntry readable.js
+787 silly gunzTarPerm modified mode [ 'readable.js', 420, 438 ]
+788 silly gunzTarPerm extractEntry transform.js
+789 silly gunzTarPerm modified mode [ 'transform.js', 420, 438 ]
+790 silly gunzTarPerm extractEntry readable.js
+791 silly gunzTarPerm modified mode [ 'readable.js', 420, 438 ]
+792 silly gunzTarPerm extractEntry transform.js
+793 silly gunzTarPerm modified mode [ 'transform.js', 420, 438 ]
+794 silly gunzTarPerm extractEntry float.patch
+795 silly gunzTarPerm modified mode [ 'float.patch', 420, 438 ]
+796 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+797 silly gunzTarPerm modified mode [ 'lib/_stream_duplex.js', 420, 438 ]
+798 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+799 silly gunzTarPerm modified mode [ 'lib/_stream_passthrough.js', 420, 438 ]
+800 silly gunzTarPerm extractEntry lib/_stream_readable.js
+801 silly gunzTarPerm modified mode [ 'lib/_stream_readable.js', 420, 438 ]
+802 silly gunzTarPerm extractEntry lib/_stream_transform.js
+803 silly gunzTarPerm modified mode [ 'lib/_stream_transform.js', 420, 438 ]
+804 silly gunzTarPerm extractEntry lib/_stream_writable.js
+805 silly gunzTarPerm modified mode [ 'lib/_stream_writable.js', 420, 438 ]
+806 silly gunzTarPerm extractEntry float.patch
+807 silly gunzTarPerm modified mode [ 'float.patch', 420, 438 ]
+808 silly gunzTarPerm extractEntry lib/_stream_duplex.js
+809 silly gunzTarPerm modified mode [ 'lib/_stream_duplex.js', 420, 438 ]
+810 silly gunzTarPerm extractEntry lib/_stream_passthrough.js
+811 silly gunzTarPerm modified mode [ 'lib/_stream_passthrough.js', 420, 438 ]
+812 silly gunzTarPerm extractEntry lib/_stream_readable.js
+813 silly gunzTarPerm modified mode [ 'lib/_stream_readable.js', 420, 438 ]
+814 silly gunzTarPerm extractEntry lib/_stream_transform.js
+815 silly gunzTarPerm modified mode [ 'lib/_stream_transform.js', 420, 438 ]
+816 silly gunzTarPerm extractEntry lib/_stream_writable.js
+817 silly gunzTarPerm modified mode [ 'lib/_stream_writable.js', 420, 438 ]
+818 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582\node_modules is being purged
+819 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582\node_modules
+820 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35\node_modules is being purged
+821 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35\node_modules
+822 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c\node_modules is being purged
+823 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c\node_modules
+824 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072\node_modules is being purged
+825 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072\node_modules
+826 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276\node_modules is being purged
+827 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276\node_modules
+828 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582\node_modules is being purged
+829 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582\node_modules
+830 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954\node_modules is being purged
+831 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954\node_modules
+832 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d\node_modules is being purged
+833 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d\node_modules
+834 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc\node_modules is being purged
+835 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc\node_modules
+836 silly doParallel preinstall 9
+837 silly preinstall core-util-is@1.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582
+838 info lifecycle core-util-is@1.0.2~preinstall: core-util-is@1.0.2
+839 silly preinstall inherits@2.0.3 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072
+840 info lifecycle inherits@2.0.3~preinstall: inherits@2.0.3
+841 silly preinstall string_decoder@0.10.31 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276
+842 info lifecycle string_decoder@0.10.31~preinstall: string_decoder@0.10.31
+843 silly preinstall readable-stream@1.1.14 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d
+844 info lifecycle readable-stream@1.1.14~preinstall: readable-stream@1.1.14
+845 silly preinstall readable-stream@1.1.14 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954
+846 info lifecycle readable-stream@1.1.14~preinstall: readable-stream@1.1.14
+847 silly preinstall inherits@1.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c
+848 info lifecycle inherits@1.0.2~preinstall: inherits@1.0.2
+849 silly preinstall tap-results@0.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35
+850 info lifecycle tap-results@0.0.2~preinstall: tap-results@0.0.2
+851 silly preinstall yamlish@0.0.7 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc
+852 info lifecycle yamlish@0.0.7~preinstall: yamlish@0.0.7
+853 silly preinstall tap-consumer@0.0.1 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582
+854 info lifecycle tap-consumer@0.0.1~preinstall: tap-consumer@0.0.1
+855 silly lifecycle core-util-is@1.0.2~preinstall: no script for preinstall, continuing
+856 silly lifecycle inherits@2.0.3~preinstall: no script for preinstall, continuing
+857 silly lifecycle string_decoder@0.10.31~preinstall: no script for preinstall, continuing
+858 silly lifecycle readable-stream@1.1.14~preinstall: no script for preinstall, continuing
+859 silly lifecycle readable-stream@1.1.14~preinstall: no script for preinstall, continuing
+860 silly lifecycle inherits@1.0.2~preinstall: no script for preinstall, continuing
+861 silly lifecycle tap-results@0.0.2~preinstall: no script for preinstall, continuing
+862 silly lifecycle yamlish@0.0.7~preinstall: no script for preinstall, continuing
+863 silly lifecycle tap-consumer@0.0.1~preinstall: no script for preinstall, continuing
+864 silly doReverseSerial remove 8
+865 silly remove C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\string_decoder
+866 verbose unbuild node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\string_decoder
+867 info lifecycle string_decoder@0.10.25-1~preuninstall: string_decoder@0.10.25-1
+868 silly lifecycle string_decoder@0.10.25-1~preuninstall: no script for preuninstall, continuing
+869 info lifecycle string_decoder@0.10.25-1~uninstall: string_decoder@0.10.25-1
+870 silly lifecycle string_decoder@0.10.25-1~uninstall: no script for uninstall, continuing
+871 verbose unbuild rmStuff string_decoder@0.10.25-1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+872 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules
+873 info lifecycle string_decoder@0.10.25-1~postuninstall: string_decoder@0.10.25-1
+874 silly lifecycle string_decoder@0.10.25-1~postuninstall: no script for postuninstall, continuing
+875 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\string_decoder is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+876 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\string_decoder
+877 silly vacuum-fs purging C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\string_decoder
+878 silly vacuum-fs quitting because other entries in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules
+879 silly remove C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder
+880 verbose unbuild node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder
+881 info lifecycle string_decoder@0.10.25-1~preuninstall: string_decoder@0.10.25-1
+882 silly lifecycle string_decoder@0.10.25-1~preuninstall: no script for preuninstall, continuing
+883 info lifecycle string_decoder@0.10.25-1~uninstall: string_decoder@0.10.25-1
+884 silly lifecycle string_decoder@0.10.25-1~uninstall: no script for uninstall, continuing
+885 verbose unbuild rmStuff string_decoder@0.10.25-1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+886 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules
+887 info lifecycle string_decoder@0.10.25-1~postuninstall: string_decoder@0.10.25-1
+888 silly lifecycle string_decoder@0.10.25-1~postuninstall: no script for postuninstall, continuing
+889 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+890 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder
+891 silly vacuum-fs purging C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\string_decoder
+892 silly vacuum-fs quitting because other entries in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules
+893 silly remove C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream
+894 verbose unbuild node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream
+895 info lifecycle readable-stream@1.1.13-1~preuninstall: readable-stream@1.1.13-1
+896 silly lifecycle readable-stream@1.1.13-1~preuninstall: no script for preuninstall, continuing
+897 info lifecycle readable-stream@1.1.13-1~uninstall: readable-stream@1.1.13-1
+898 silly lifecycle readable-stream@1.1.13-1~uninstall: no script for uninstall, continuing
+899 verbose unbuild rmStuff readable-stream@1.1.13-1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+900 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules
+901 info lifecycle readable-stream@1.1.13-1~postuninstall: readable-stream@1.1.13-1
+902 silly lifecycle readable-stream@1.1.13-1~postuninstall: no script for postuninstall, continuing
+903 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+904 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream
+905 silly vacuum-fs purging C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream
+906 silly vacuum-fs quitting because other entries in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules
+907 silly remove C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream
+908 verbose unbuild node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream
+909 info lifecycle readable-stream@1.1.13-1~preuninstall: readable-stream@1.1.13-1
+910 silly lifecycle readable-stream@1.1.13-1~preuninstall: no script for preuninstall, continuing
+911 info lifecycle readable-stream@1.1.13-1~uninstall: readable-stream@1.1.13-1
+912 silly lifecycle readable-stream@1.1.13-1~uninstall: no script for uninstall, continuing
+913 verbose unbuild rmStuff readable-stream@1.1.13-1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+914 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules
+915 info lifecycle readable-stream@1.1.13-1~postuninstall: readable-stream@1.1.13-1
+916 silly lifecycle readable-stream@1.1.13-1~postuninstall: no script for postuninstall, continuing
+917 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+918 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream
+919 silly vacuum-fs purging C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream
+920 silly vacuum-fs quitting because other entries in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules
+921 silly remove C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\isarray
+922 verbose unbuild node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\isarray
+923 info lifecycle isarray@0.0.1~preuninstall: isarray@0.0.1
+924 silly lifecycle isarray@0.0.1~preuninstall: no script for preuninstall, continuing
+925 info lifecycle isarray@0.0.1~uninstall: isarray@0.0.1
+926 silly lifecycle isarray@0.0.1~uninstall: no script for uninstall, continuing
+927 verbose unbuild rmStuff isarray@0.0.1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+928 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules
+929 info lifecycle isarray@0.0.1~postuninstall: isarray@0.0.1
+930 silly lifecycle isarray@0.0.1~postuninstall: no script for postuninstall, continuing
+931 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\isarray is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+932 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\isarray
+933 silly vacuum-fs purging C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\isarray
+934 silly vacuum-fs quitting because other entries in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules
+935 silly remove C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\core-util-is
+936 verbose unbuild node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\core-util-is
+937 info lifecycle core-util-is@1.0.1~preuninstall: core-util-is@1.0.1
+938 silly lifecycle core-util-is@1.0.1~preuninstall: no script for preuninstall, continuing
+939 info lifecycle core-util-is@1.0.1~uninstall: core-util-is@1.0.1
+940 silly lifecycle core-util-is@1.0.1~uninstall: no script for uninstall, continuing
+941 verbose unbuild rmStuff core-util-is@1.0.1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+942 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules
+943 info lifecycle core-util-is@1.0.1~postuninstall: core-util-is@1.0.1
+944 silly lifecycle core-util-is@1.0.1~postuninstall: no script for postuninstall, continuing
+945 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\core-util-is is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+946 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\core-util-is
+947 silly vacuum-fs purging C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules\core-util-is
+948 silly vacuum-fs removing C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream\node_modules
+949 silly vacuum-fs removing C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream
+950 silly vacuum-fs quitting because other entries in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules
+951 silly remove C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\inherits
+952 verbose unbuild node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\inherits
+953 info lifecycle inherits@2.0.1~preuninstall: inherits@2.0.1
+954 silly lifecycle inherits@2.0.1~preuninstall: no script for preuninstall, continuing
+955 info lifecycle inherits@2.0.1~uninstall: inherits@2.0.1
+956 silly lifecycle inherits@2.0.1~uninstall: no script for uninstall, continuing
+957 verbose unbuild rmStuff inherits@2.0.1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+958 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules
+959 info lifecycle inherits@2.0.1~postuninstall: inherits@2.0.1
+960 silly lifecycle inherits@2.0.1~postuninstall: no script for postuninstall, continuing
+961 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\inherits is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+962 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\inherits
+963 silly vacuum-fs purging C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\inherits
+964 silly vacuum-fs quitting because other entries in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules
+965 silly remove C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is
+966 verbose unbuild node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is
+967 info lifecycle core-util-is@1.0.1~preuninstall: core-util-is@1.0.1
+968 silly lifecycle core-util-is@1.0.1~preuninstall: no script for preuninstall, continuing
+969 info lifecycle core-util-is@1.0.1~uninstall: core-util-is@1.0.1
+970 silly lifecycle core-util-is@1.0.1~uninstall: no script for uninstall, continuing
+971 verbose unbuild rmStuff core-util-is@1.0.1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+972 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules
+973 info lifecycle core-util-is@1.0.1~postuninstall: core-util-is@1.0.1
+974 silly lifecycle core-util-is@1.0.1~postuninstall: no script for postuninstall, continuing
+975 silly gentlyRm C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is is being purged from base C:\Users\Brett\Documents\GitHub\3Dmol.js
+976 verbose gentlyRm don't care about contents; nuking C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is
+977 silly vacuum-fs purging C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\core-util-is
+978 silly vacuum-fs quitting because other entries in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules
+979 silly doSerial move 1
+980 silly move C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\isarray
+981 info lifecycle isarray@0.0.1~preuninstall: isarray@0.0.1
+982 silly lifecycle isarray@0.0.1~preuninstall: no script for preuninstall, continuing
+983 info lifecycle isarray@0.0.1~uninstall: isarray@0.0.1
+984 silly lifecycle isarray@0.0.1~uninstall: no script for uninstall, continuing
+985 verbose unbuild rmStuff isarray@0.0.1 from C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+986 verbose unbuild rmStuff in C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules
+987 info lifecycle isarray@0.0.1~postuninstall: isarray@0.0.1
+988 silly lifecycle isarray@0.0.1~postuninstall: no script for postuninstall, continuing
+989 silly move move existing destination node_modules away C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\isarray\node_modules
+990 silly move remove existing destination C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\isarray
+991 silly move make sure destination parent exists C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules
+992 silly move move source node_modules away C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray\node_modules
+993 silly move move module dir to final dest C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream\node_modules\isarray C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\isarray
+994 info lifecycle isarray@0.0.1~preinstall: isarray@0.0.1
+995 silly lifecycle isarray@0.0.1~preinstall: no script for preinstall, continuing
+996 silly doSerial finalize 9
+997 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\core-util-is
+998 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\inherits
+999 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\string_decoder
+1000 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules\readable-stream
+1001 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules\readable-stream
+1002 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\tap-results\node_modules\inherits
+1003 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\tap-results
+1004 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\yamlish
+1005 silly finalize C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\tap-consumer
+1006 silly doSerial build 10
+1007 silly build core-util-is@1.0.2
+1008 info linkStuff core-util-is@1.0.2
+1009 silly linkStuff core-util-is@1.0.2 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules as its parent node_modules
+1010 verbose linkBins core-util-is@1.0.2
+1011 verbose linkMans core-util-is@1.0.2
+1012 silly build inherits@2.0.3
+1013 info linkStuff inherits@2.0.3
+1014 silly linkStuff inherits@2.0.3 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules as its parent node_modules
+1015 verbose linkBins inherits@2.0.3
+1016 verbose linkMans inherits@2.0.3
+1017 silly build isarray@0.0.1
+1018 info linkStuff isarray@0.0.1
+1019 silly linkStuff isarray@0.0.1 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules as its parent node_modules
+1020 verbose linkBins isarray@0.0.1
+1021 verbose linkMans isarray@0.0.1
+1022 silly build string_decoder@0.10.31
+1023 info linkStuff string_decoder@0.10.31
+1024 silly linkStuff string_decoder@0.10.31 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules as its parent node_modules
+1025 verbose linkBins string_decoder@0.10.31
+1026 verbose linkMans string_decoder@0.10.31
+1027 silly build readable-stream@1.1.14
+1028 info linkStuff readable-stream@1.1.14
+1029 silly linkStuff readable-stream@1.1.14 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-jshint\node_modules\jshint\node_modules\htmlparser2\node_modules as its parent node_modules
+1030 verbose linkBins readable-stream@1.1.14
+1031 verbose linkMans readable-stream@1.1.14
+1032 silly build readable-stream@1.1.14
+1033 info linkStuff readable-stream@1.1.14
+1034 silly linkStuff readable-stream@1.1.14 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\grunt-contrib-uglify\node_modules\maxmin\node_modules\gzip-size\node_modules\concat-stream\node_modules as its parent node_modules
+1035 verbose linkBins readable-stream@1.1.14
+1036 verbose linkMans readable-stream@1.1.14
+1037 silly build inherits@1.0.2
+1038 info linkStuff inherits@1.0.2
+1039 silly linkStuff inherits@1.0.2 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\tap-results\node_modules as its parent node_modules
+1040 verbose linkBins inherits@1.0.2
+1041 verbose linkMans inherits@1.0.2
+1042 silly build tap-results@0.0.2
+1043 info linkStuff tap-results@0.0.2
+1044 silly linkStuff tap-results@0.0.2 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules as its parent node_modules
+1045 verbose linkBins tap-results@0.0.2
+1046 verbose linkMans tap-results@0.0.2
+1047 silly build yamlish@0.0.7
+1048 info linkStuff yamlish@0.0.7
+1049 silly linkStuff yamlish@0.0.7 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules as its parent node_modules
+1050 verbose linkBins yamlish@0.0.7
+1051 verbose linkMans yamlish@0.0.7
+1052 silly build tap-consumer@0.0.1
+1053 info linkStuff tap-consumer@0.0.1
+1054 silly linkStuff tap-consumer@0.0.1 has C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules as its parent node_modules
+1055 verbose linkBins tap-consumer@0.0.1
+1056 verbose linkMans tap-consumer@0.0.1
+1057 silly doSerial global-link 0
+1058 silly doParallel update-linked 0
+1059 silly doSerial install 10
+1060 silly install core-util-is@1.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582
+1061 info lifecycle core-util-is@1.0.2~install: core-util-is@1.0.2
+1062 silly lifecycle core-util-is@1.0.2~install: no script for install, continuing
+1063 silly install inherits@2.0.3 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072
+1064 info lifecycle inherits@2.0.3~install: inherits@2.0.3
+1065 silly lifecycle inherits@2.0.3~install: no script for install, continuing
+1066 silly install isarray@0.0.1 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\isarray-0083b1f2
+1067 info lifecycle isarray@0.0.1~install: isarray@0.0.1
+1068 silly lifecycle isarray@0.0.1~install: no script for install, continuing
+1069 silly install string_decoder@0.10.31 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276
+1070 info lifecycle string_decoder@0.10.31~install: string_decoder@0.10.31
+1071 silly lifecycle string_decoder@0.10.31~install: no script for install, continuing
+1072 silly install readable-stream@1.1.14 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d
+1073 info lifecycle readable-stream@1.1.14~install: readable-stream@1.1.14
+1074 silly lifecycle readable-stream@1.1.14~install: no script for install, continuing
+1075 silly install readable-stream@1.1.14 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954
+1076 info lifecycle readable-stream@1.1.14~install: readable-stream@1.1.14
+1077 silly lifecycle readable-stream@1.1.14~install: no script for install, continuing
+1078 silly install inherits@1.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c
+1079 info lifecycle inherits@1.0.2~install: inherits@1.0.2
+1080 silly lifecycle inherits@1.0.2~install: no script for install, continuing
+1081 silly install tap-results@0.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35
+1082 info lifecycle tap-results@0.0.2~install: tap-results@0.0.2
+1083 silly lifecycle tap-results@0.0.2~install: no script for install, continuing
+1084 silly install yamlish@0.0.7 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc
+1085 info lifecycle yamlish@0.0.7~install: yamlish@0.0.7
+1086 silly lifecycle yamlish@0.0.7~install: no script for install, continuing
+1087 silly install tap-consumer@0.0.1 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582
+1088 info lifecycle tap-consumer@0.0.1~install: tap-consumer@0.0.1
+1089 silly lifecycle tap-consumer@0.0.1~install: no script for install, continuing
+1090 silly doSerial postinstall 10
+1091 silly postinstall core-util-is@1.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\core-util-is-1bbf2582
+1092 info lifecycle core-util-is@1.0.2~postinstall: core-util-is@1.0.2
+1093 silly lifecycle core-util-is@1.0.2~postinstall: no script for postinstall, continuing
+1094 silly postinstall inherits@2.0.3 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-77e02072
+1095 info lifecycle inherits@2.0.3~postinstall: inherits@2.0.3
+1096 silly lifecycle inherits@2.0.3~postinstall: no script for postinstall, continuing
+1097 silly postinstall isarray@0.0.1 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\isarray-0083b1f2
+1098 info lifecycle isarray@0.0.1~postinstall: isarray@0.0.1
+1099 silly lifecycle isarray@0.0.1~postinstall: no script for postinstall, continuing
+1100 silly postinstall string_decoder@0.10.31 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\string_decoder-3a896276
+1101 info lifecycle string_decoder@0.10.31~postinstall: string_decoder@0.10.31
+1102 silly lifecycle string_decoder@0.10.31~postinstall: no script for postinstall, continuing
+1103 silly postinstall readable-stream@1.1.14 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-447fc21d
+1104 info lifecycle readable-stream@1.1.14~postinstall: readable-stream@1.1.14
+1105 silly lifecycle readable-stream@1.1.14~postinstall: no script for postinstall, continuing
+1106 silly postinstall readable-stream@1.1.14 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\readable-stream-c8506954
+1107 info lifecycle readable-stream@1.1.14~postinstall: readable-stream@1.1.14
+1108 silly lifecycle readable-stream@1.1.14~postinstall: no script for postinstall, continuing
+1109 silly postinstall inherits@1.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\inherits-29e4534c
+1110 info lifecycle inherits@1.0.2~postinstall: inherits@1.0.2
+1111 silly lifecycle inherits@1.0.2~postinstall: no script for postinstall, continuing
+1112 silly postinstall tap-results@0.0.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-results-09115b35
+1113 info lifecycle tap-results@0.0.2~postinstall: tap-results@0.0.2
+1114 silly lifecycle tap-results@0.0.2~postinstall: no script for postinstall, continuing
+1115 silly postinstall yamlish@0.0.7 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\yamlish-44a835cc
+1116 info lifecycle yamlish@0.0.7~postinstall: yamlish@0.0.7
+1117 silly lifecycle yamlish@0.0.7~postinstall: no script for postinstall, continuing
+1118 silly postinstall tap-consumer@0.0.1 C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging\tap-consumer-83f28582
+1119 info lifecycle tap-consumer@0.0.1~postinstall: tap-consumer@0.0.1
+1120 silly lifecycle tap-consumer@0.0.1~postinstall: no script for postinstall, continuing
+1121 verbose unlock done using C:\Users\Brett\AppData\Roaming\npm-cache\_locks\staging-1aba5698c07fb098.lock for C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.staging
+1122 silly executeActions Finishing
+1123 silly rollbackFailedOptional Starting
+1124 silly rollbackFailedOptional Finishing
+1125 silly install runPostinstallTopLevelLifecycles
+1126 silly build 3dmol@1.1.2
+1127 info linkStuff 3dmol@1.1.2
+1128 silly linkStuff 3dmol@1.1.2 has C:\Users\Brett\Documents\GitHub as its parent node_modules
+1129 verbose linkBins 3dmol@1.1.2
+1130 verbose linkMans 3dmol@1.1.2
+1131 silly install 3dmol@1.1.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\3dmol-f2b68da3
+1132 info lifecycle 3dmol@1.1.2~install: 3dmol@1.1.2
+1133 silly lifecycle 3dmol@1.1.2~install: no script for install, continuing
+1134 silly postinstall 3dmol@1.1.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\3dmol-f2b68da3
+1135 info lifecycle 3dmol@1.1.2~postinstall: 3dmol@1.1.2
+1136 silly lifecycle 3dmol@1.1.2~postinstall: no script for postinstall, continuing
+1137 silly prepublish 3dmol@1.1.2 C:\Users\Brett\Documents\GitHub\3Dmol.js\3dmol-f2b68da3
+1138 info lifecycle 3dmol@1.1.2~prepublish: 3dmol@1.1.2
+1139 verbose lifecycle 3dmol@1.1.2~prepublish: unsafe-perm in lifecycle true
+1140 verbose lifecycle 3dmol@1.1.2~prepublish: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Brett\Documents\GitHub\3Dmol.js\node_modules\.bin;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\PharosSystems\Core;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Brett\AppData\Local\Microsoft\WindowsApps;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Users\Brett\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Users\Brett\AppData\Local\GitHubDesktop\bin;C:\Users\Brett\AppData\Roaming\npm
+1141 verbose lifecycle 3dmol@1.1.2~prepublish: CWD: C:\Users\Brett\Documents\GitHub\3Dmol.js
+1142 silly lifecycle 3dmol@1.1.2~prepublish: Args: [ '/d /s /c', 'npm run build' ]
+1143 silly lifecycle 3dmol@1.1.2~prepublish: Returned: code: 1  signal: null
+1144 info lifecycle 3dmol@1.1.2~prepublish: Failed to exec prepublish script
+1145 warn 3dmol@1.1.2 No license field.
+1146 verbose If you need help, you may report this error at:
+1146 verbose     <https://github.com/npm/npm/issues>
+1147 verbose stack Error: 3dmol@1.1.2 prepublish: `npm run build`
+1147 verbose stack Exit status 1
+1147 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+1147 verbose stack     at emitTwo (events.js:106:13)
+1147 verbose stack     at EventEmitter.emit (events.js:191:7)
+1147 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+1147 verbose stack     at emitTwo (events.js:106:13)
+1147 verbose stack     at ChildProcess.emit (events.js:191:7)
+1147 verbose stack     at maybeClose (internal/child_process.js:920:16)
+1147 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+1148 verbose pkgid 3dmol@1.1.2
+1149 verbose cwd C:\Users\Brett\Documents\GitHub\3Dmol.js
+1150 error Windows_NT 10.0.15063
+1151 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+1152 error node v6.11.4
+1153 error npm  v3.10.10
+1154 error code ELIFECYCLE
+1155 error 3dmol@1.1.2 prepublish: `npm run build`
+1155 error Exit status 1
+1156 error Failed at the 3dmol@1.1.2 prepublish script 'npm run build'.
+1156 error Make sure you have the latest version of node.js and npm installed.
+1156 error If you do, this is most likely a problem with the 3dmol package,
+1156 error not with npm itself.
+1156 error Tell the author that this fails on your system:
+1156 error     npm run build
+1156 error You can get information on how to open an issue for this project with:
+1156 error     npm bugs 3dmol
+1156 error Or if that isn't available, you can get their info via:
+1156 error     npm owner ls 3dmol
+1156 error There is likely additional logging output above.
+1157 verbose exit [ 1, true ]

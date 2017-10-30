@@ -629,6 +629,140 @@ $3Dmol.GLViewer = (function() {
         };
         initContainer(container);
 
+		
+		//device orientation changes
+		//start DEV Bas164
+		
+		var CONTROLLER_EVENT = {
+		CALIBRATE_COMPASS:  'compassneedscalibration',
+		SCREEN_ORIENTATION: 'orientationchange',
+		MANUAL_CONTROL:     'userinteraction', // userinteractionstart, userinteractionend
+		ZOOM_CONTROL:       'zoom',            // zoomstart, zoomend
+		ROTATE_CONTROL:     'rotate',          // rotatestart, rotateend
+	};
+	
+		this.connect = function () {
+		window.addEventListener( 'resize', this.constrainObjectFOV, false );
+
+		window.addEventListener( 'orientationchange', this.onScreenOrientationChange, false );
+		window.addEventListener( 'deviceorientation', this.onDeviceOrientationChange, false );
+
+		window.addEventListener( 'compassneedscalibration', this.onCompassNeedsCalibration, false );
+
+		this.element.addEventListener( 'mousedown', this.onDocumentMouseDown, false );
+		this.element.addEventListener( 'touchstart', this.onDocumentTouchStart, false );
+
+		this.freeze = false;
+	};
+	
+	
+	
+	
+		var deviceQuat = new $3Dmol.Quaternion();
+		
+		
+		
+		var createQuaternion = function () {
+
+		var finalQuaternion = new $3Dmjol.Quaternion();
+
+		var deviceEuler = {x:0, y:0, z:0};
+
+		var screenTransform = new $3Dmjol.Quaternion();
+
+		var worldTransform = new $3Dmjol.Quaternion( - Math.sqrt(0.5), 0, 0, Math.sqrt(0.5) ); // - PI/2 around the x-axis
+
+		var minusHalfAngle = 0;
+
+		return function ( alpha, beta, gamma, screenOrientation ) {
+
+			//deviceEuler.set( alpha, beta, - gamma, 'XYZ' );
+			deviceEuler.x = alpha;
+			deviceEuler.y = beta;
+			deviceEuler.z = - gamma;
+			//Quaternion.setFromEuler
+			//finalQuaternion.setFromEuler( deviceEuler );
+			
+			var c1 = Math.cos( deviceEuler.x / 2 );
+			var c2 = Math.cos( deviceEuler.y / 2 );
+			var c3 = Math.cos( deviceEuler.z / 2 );
+			var s1 = Math.sin( deviceEuler.x / 2 );
+			var s2 = Math.sin( deviceEuler.y / 2 );
+			var s3 = Math.sin( deviceEuler.z / 2 );
+		 
+			
+			finalQuaternion.x = s1 * c2 * c3 + c1 * s2 * s3;
+			finalQuaternion.y = c1 * s2 * c3 - s1 * c2 * s3;
+			finalQuaternion.z = c1 * c2 * s3 + s1 * s2 * c3;
+			finalQuaternion.w = c1 * c2 * c3 - s1 * s2 * s3;
+			
+		 
+			
+		
+			
+
+			minusHalfAngle = - screenOrientation / 2;
+
+			screenTransform.set( 0, Math.sin( minusHalfAngle ), 0, Math.cos( minusHalfAngle ) );
+
+			finalQuaternion.multiply( screenTransform );
+
+			finalQuaternion.multiply( worldTransform );
+
+			return finalQuaternion;
+
+		}
+	}();
+	
+	
+		var createRotationMatrix = function () {
+
+		var finalMatrix = new $3Dmol.Matrix4();
+
+		//var deviceEuler = new $3Dmol.Euler(); 
+		var deviceEuler = {x:0, y:0, z:0}; //Components of the Eueler
+		//var screenEuler = new $3Dmol.Euler();
+		var screenEuler = {x:0, y:0, z:0}; //Components of the Euler
+		//var worldEuler = new $3Dmol.Euler( - Math.PI / 2, 0, 0, 'YXZ' ); // - PI/2 around the x-axis
+		var worldEuler = {x:0, y:(- Math.PI / 2), z:0}; //Components of the Euler
+		
+		var screenTransform = new $3Dmol.Matrix4();
+
+		var worldTransform = new $3Dmol.Matrix4();
+		worldTransform.setRotationFromEuler(worldEuler); //function name (setRotationFromEuler() in math.js) instead of (makeRotationfromEuler() in normal Matrix4s)
+
+		return function (alpha, beta, gamma, screenOrientation) {
+
+			//deviceEuler.set( alpha, beta, - gamma, 'XYZ' ); //fixed for XYZ
+			deviceEuler.x = alpha;
+			deviceEuler.y = beta;
+			deviceEuler.z = - gamma;
+
+			finalMatrix.identity();
+
+			finalMatrix.setRotationFromEuler( deviceEuler ); //function name (setRotationFromEuler() in math.js) instead of (makeRotationfromEuler() in normal Matrix4s)
+
+			//screenEuler.set( - screenOrientation, 0, 0, 'XYZ' ); //fixed for XYZ
+			screenEuler.x = - screenOrientation;
+			screenEuler.y = 0;
+			screenEuler.z = 0;
+			
+			screenTransform.identity();
+
+			screenTransform.setRotationFromEuler( screenEuler ); //function name (setRotationFromEuler() in math.js) instead of (makeRotationfromEuler() in normal Matrix4s)
+
+			finalMatrix.multiply( screenTransform );
+
+			finalMatrix.multiply( worldTransform );
+
+			return finalMatrix;
+
+		}
+	}();
+		
+		
+		
+		
         // public methods
         /**
          * Change the viewer's container element 
