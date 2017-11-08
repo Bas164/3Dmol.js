@@ -641,80 +641,86 @@ $3Dmol.GLViewer = (function() {
 		ROTATE_CONTROL:     'rotate',          // rotatestart, rotateend
 	};
 	
-		this.connect = function () {
-		window.addEventListener( 'resize', this.constrainObjectFOV, false );
 
-		window.addEventListener( 'orientationchange', this.onScreenOrientationChange, false );
+		//window.addEventListener( 'orientationchange', this.onScreenOrientationChange, false );
 		window.addEventListener( 'deviceorientation', this.onDeviceOrientationChange, false );
 
-		window.addEventListener( 'compassneedscalibration', this.onCompassNeedsCalibration, false );
-
-		this.element.addEventListener( 'mousedown', this.onDocumentMouseDown, false );
-		this.element.addEventListener( 'touchstart', this.onDocumentTouchStart, false );
-
-		this.freeze = false;
-	};
+		
 	
 	
 	
 	
 		var deviceQuat = new $3Dmol.Quaternion();
-		
-		
+		this.deviceOrientation = {};
+		this.screenOrientation = window.orientation || 0;
 		
 		var createQuaternion = function () {
 
-		var finalQuaternion = new $3Dmjol.Quaternion();
+			var finalQuaternion = new $3Dmol.Quaternion();
 
-		var deviceEuler = {x:0, y:0, z:0};
+			var deviceEuler = {x:0, y:0, z:0};
 
-		var screenTransform = new $3Dmjol.Quaternion();
+			var screenTransform = new $3Dmol.Quaternion();
 
-		var worldTransform = new $3Dmjol.Quaternion( - Math.sqrt(0.5), 0, 0, Math.sqrt(0.5) ); // - PI/2 around the x-axis
+			var worldTransform = new $3Dmol.Quaternion( - Math.sqrt(0.5), 0, 0, Math.sqrt(0.5) ); // - PI/2 around the x-axis
 
-		var minusHalfAngle = 0;
+			var minusHalfAngle = 0;
 
-		return function ( alpha, beta, gamma, screenOrientation ) {
+			return function ( alpha, beta, gamma, screenOrientation ) {
 
-			//deviceEuler.set( alpha, beta, - gamma, 'XYZ' );
-			deviceEuler.x = alpha;
-			deviceEuler.y = beta;
-			deviceEuler.z = - gamma;
-			//Quaternion.setFromEuler
-			//finalQuaternion.setFromEuler( deviceEuler );
-			
-			var c1 = Math.cos( deviceEuler.x / 2 );
-			var c2 = Math.cos( deviceEuler.y / 2 );
-			var c3 = Math.cos( deviceEuler.z / 2 );
-			var s1 = Math.sin( deviceEuler.x / 2 );
-			var s2 = Math.sin( deviceEuler.y / 2 );
-			var s3 = Math.sin( deviceEuler.z / 2 );
-		 
-			
-			finalQuaternion.x = s1 * c2 * c3 + c1 * s2 * s3;
-			finalQuaternion.y = c1 * s2 * c3 - s1 * c2 * s3;
-			finalQuaternion.z = c1 * c2 * s3 + s1 * s2 * c3;
-			finalQuaternion.w = c1 * c2 * c3 - s1 * s2 * s3;
-			
-		 
-			
-		
-			
+				//deviceEuler.set( alpha, beta, - gamma, 'XYZ' );
+				deviceEuler.x = alpha;
+				deviceEuler.y = beta;
+				deviceEuler.z = - gamma;
+				
+				//Quaternion.setFromEuler
+				finalQuaternion.setFromEuler( deviceEuler );
+				
+				minusHalfAngle = - screenOrientation / 2;
 
-			minusHalfAngle = - screenOrientation / 2;
+				screenTransform.set( 0, Math.sin( minusHalfAngle ), 0, Math.cos( minusHalfAngle ) );
 
-			screenTransform.set( 0, Math.sin( minusHalfAngle ), 0, Math.cos( minusHalfAngle ) );
+				finalQuaternion.multiply( screenTransform );
 
-			finalQuaternion.multiply( screenTransform );
+				finalQuaternion.multiply( worldTransform );
 
-			finalQuaternion.multiply( worldTransform );
+				return finalQuaternion;
 
-			return finalQuaternion;
-
-		}
+			}
 	}();
 	
-	
+		this.onDeviceOrientationChange = function ( event ) {
+			//this.deviceOrientation = event;
+			var alpha, beta, gamma, orient;
+
+			var deviceMatrix;
+
+			return function () {
+
+				
+				alpha  = $3Dmol.Math.degToRad( this.deviceOrientation.alpha || 0 ); // Z
+				beta   = $3Dmol.Math.degToRad( this.deviceOrientation.beta  || 0 ); // X'
+				gamma  = $3Dmol.Math.degToRad( this.deviceOrientation.gamma || 0 ); // Y''
+				orient = $3Dmol.Math.degToRad( this.screenOrientation       || 0 ); // O
+
+				// only process non-zero 3-axis data
+				if ( alpha !== 0 && beta !== 0 && gamma !== 0) {
+
+
+					deviceQuat = createQuaternion( alpha, beta, gamma, orient );
+
+					console.log("deviceQuat {alpha, beta, gamma, orientation} : {" + alpha + ", " + beta + ", " + gamma + ", " + orient + "}");
+					rotationGroup.quaternion.copy( deviceQuat );
+					
+					
+
+				}
+				
+				show();
+
+			};
+		}.bind( this );
+	/*
 		var createRotationMatrix = function () {
 
 		var finalMatrix = new $3Dmol.Matrix4();
@@ -759,7 +765,7 @@ $3Dmol.GLViewer = (function() {
 
 		}
 	}();
-		
+	*/
 		
 		
 		
