@@ -652,7 +652,7 @@ $3Dmol.GLViewer = (function() {
 	
 		var deviceQuat = new $3Dmol.Quaternion();
 		this.deviceOrientation = {};
-		this.screenOrientation = window.orientation || 0;
+		this.screenOrientation = window.orientation; //|| 0;
 		
         //given deviceorientation values, return correct rotation quaternion
 
@@ -678,19 +678,20 @@ $3Dmol.GLViewer = (function() {
 
         window.addEventListener('deviceorientation', function(event) {
             var alpha  = $3Dmol.Math.degToRad( event.alpha || 0 ); // Z
-            var beta   = $3Dmol.Math.degToRad( event.beta  || 0 ); // X'
+            var beta   = $3Dmol.Math.degToRad( event.beta || 0 ); // X'
             var gamma  = $3Dmol.Math.degToRad( event.gamma || 0 ); // Y''
             var orient = $3Dmol.Math.degToRad( this.screenOrientation       || 0 ); // O
             if ( alpha !== 0 || beta !== 0 || gamma !== 0) {                   
-                   var deviceQuat = createQuaternion( beta, alpha, gamma, orient );
-                   console.log("deviceQuat {alpha, beta, gamma, orientation} : {" + alpha + ", " + beta + ", " + gamma + ", " + orient + "}");
+                   var deviceQuat = createQuaternion( -beta, gamma, -alpha, orient );
+                   console.log("deviceQuat {alpha, beta, gamma, orientation} : {" +  Math.trunc(event.alpha) + ", " + Math.trunc(event.beta) + ", " + Math.trunc(event.gamma) + ", " + event.orient + "}");
                   rotationGroup.quaternion.copy( deviceQuat );
+				  //camera.quaternion.copy( deviceQuat );
             }
             show(); 
         },true);
 		
 		window.addEventListener('orientationchange', function() {
-			screenOrientation =  window.orientation;
+			screenOrientation =  window.screen.orientation;
 			console.log("screenorientation: {" + screenOrientation + "}");
 		});
 		
