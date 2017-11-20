@@ -683,7 +683,7 @@ $3Dmol.GLViewer = (function() {
             var orient = $3Dmol.Math.degToRad( this.screenOrientation       || 0 ); // O
             if ( alpha !== 0 || beta !== 0 || gamma !== 0) {                   
                    var deviceQuat = createQuaternion( beta, alpha, gamma, orient );
-                   console.log("deviceQuat {alpha, beta, gamma, orientation} : {" + alpha + ", " + beta + ", " + gamma + ", " + orient + "}");
+                   console.log("deviceQuat {alpha, beta, gamma, orientation} : {" + Math.trunc(event.alpha) + ", " + Math.trunc(event.beta) + ", " + Math.trunc(event.gamma) + ", " + orient + "}");
                   rotationGroup.quaternion.copy( deviceQuat );
             }
             show(); 
