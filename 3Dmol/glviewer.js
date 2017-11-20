@@ -629,6 +629,120 @@ $3Dmol.GLViewer = (function() {
         };
         initContainer(container);
 
+		
+		//device orientation changes
+		//start DEV Bas164
+		
+		var CONTROLLER_EVENT = {
+		CALIBRATE_COMPASS:  'compassneedscalibration',
+		SCREEN_ORIENTATION: 'orientationchange',
+		MANUAL_CONTROL:     'userinteraction', // userinteractionstart, userinteractionend
+		ZOOM_CONTROL:       'zoom',            // zoomstart, zoomend
+		ROTATE_CONTROL:     'rotate',          // rotatestart, rotateend
+	};
+	
+
+		//window.addEventListener( 'orientationchange', this.onScreenOrientationChange, false );
+		window.addEventListener( 'deviceorientation', this.onDeviceOrientationChange, false );
+
+		
+	
+	
+	
+	
+		var deviceQuat = new $3Dmol.Quaternion();
+		this.deviceOrientation = {};
+		this.screenOrientation = window.orientation || 0;
+		
+        //given deviceorientation values, return correct rotation quaternion
+
+        var createQuaternion = function ( alpha, beta, gamma, screenOrientation ) {
+                //deviceEuler.set( alpha, beta, - gamma, 'XYZ' );
+                deviceEuler = {x:alpha,
+                               y: beta,
+                               z: gamma};
+                
+                var finalQuaternion = new $3Dmol.Quaternion();
+                var screenTransform = new $3Dmol.Quaternion();
+				
+				//Quaternion.setFromEuler
+                finalQuaternion.setFromEuler( deviceEuler );
+				
+                var minusHalfAngle = - screenOrientation / 2;
+
+                finalQuaternion.multiply( screenTransform );
+
+                return finalQuaternion;
+       };
+
+
+        window.addEventListener('deviceorientation', function(event) {
+            var alpha  = $3Dmol.Math.degToRad( event.alpha || 0 ); // Z
+            var beta   = $3Dmol.Math.degToRad( event.beta  || 0 ); // X'
+            var gamma  = $3Dmol.Math.degToRad( event.gamma || 0 ); // Y''
+            var orient = $3Dmol.Math.degToRad( this.screenOrientation       || 0 ); // O
+            if ( alpha !== 0 || beta !== 0 || gamma !== 0) {                   
+                   var deviceQuat = createQuaternion( beta, alpha, gamma, orient );
+                   console.log("deviceQuat {alpha, beta, gamma, orientation} : {" + alpha + ", " + beta + ", " + gamma + ", " + orient + "}");
+                  rotationGroup.quaternion.copy( deviceQuat );
+            }
+            show(); 
+        },true);
+		
+		window.addEventListener('orientationchange', function() {
+			screenOrientation =  window.orientation;
+			console.log("screenorientation: {" + screenOrientation + "}");
+		});
+		
+	/*
+		var createRotationMatrix = function () {
+
+		var finalMatrix = new $3Dmol.Matrix4();
+
+		//var deviceEuler = new $3Dmol.Euler(); 
+		var deviceEuler = {x:0, y:0, z:0}; //Components of the Eueler
+		//var screenEuler = new $3Dmol.Euler();
+		var screenEuler = {x:0, y:0, z:0}; //Components of the Euler
+		//var worldEuler = new $3Dmol.Euler( - Math.PI / 2, 0, 0, 'YXZ' ); // - PI/2 around the x-axis
+		var worldEuler = {x:0, y:(- Math.PI / 2), z:0}; //Components of the Euler
+		
+		var screenTransform = new $3Dmol.Matrix4();
+
+		var worldTransform = new $3Dmol.Matrix4();
+		worldTransform.setRotationFromEuler(worldEuler); //function name (setRotationFromEuler() in math.js) instead of (makeRotationfromEuler() in normal Matrix4s)
+
+		return function (alpha, beta, gamma, screenOrientation) {
+
+			//deviceEuler.set( alpha, beta, - gamma, 'XYZ' ); //fixed for XYZ
+			deviceEuler.x = alpha;
+			deviceEuler.y = beta;
+			deviceEuler.z = - gamma;
+
+			finalMatrix.identity();
+
+			finalMatrix.setRotationFromEuler( deviceEuler ); //function name (setRotationFromEuler() in math.js) instead of (makeRotationfromEuler() in normal Matrix4s)
+
+			//screenEuler.set( - screenOrientation, 0, 0, 'XYZ' ); //fixed for XYZ
+			screenEuler.x = - screenOrientation;
+			screenEuler.y = 0;
+			screenEuler.z = 0;
+			
+			screenTransform.identity();
+
+			screenTransform.setRotationFromEuler( screenEuler ); //function name (setRotationFromEuler() in math.js) instead of (makeRotationfromEuler() in normal Matrix4s)
+
+			finalMatrix.multiply( screenTransform );
+
+			finalMatrix.multiply( worldTransform );
+
+			return finalMatrix;
+
+		}
+	}();
+	*/
+		
+		
+		
         // public methods
         /**
          * Change the viewer's container element 
