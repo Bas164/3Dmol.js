@@ -654,72 +654,46 @@ $3Dmol.GLViewer = (function() {
 		this.deviceOrientation = {};
 		this.screenOrientation = window.orientation || 0;
 		
-		var createQuaternion = function () {
+        //given deviceorientation values, return correct rotation quaternion
 
-			var finalQuaternion = new $3Dmol.Quaternion();
-
-			var deviceEuler = {x:0, y:0, z:0};
-
-			var screenTransform = new $3Dmol.Quaternion();
-
-			var worldTransform = new $3Dmol.Quaternion( - Math.sqrt(0.5), 0, 0, Math.sqrt(0.5) ); // - PI/2 around the x-axis
-
-			var minusHalfAngle = 0;
-
-			return function ( alpha, beta, gamma, screenOrientation ) {
-
-				//deviceEuler.set( alpha, beta, - gamma, 'XYZ' );
-				deviceEuler.x = alpha;
-				deviceEuler.y = beta;
-				deviceEuler.z = - gamma;
+        var createQuaternion = function ( alpha, beta, gamma, screenOrientation ) {
+                //deviceEuler.set( alpha, beta, - gamma, 'XYZ' );
+                deviceEuler = {x:alpha,
+                               y: beta,
+                               z: gamma};
+                
+                var finalQuaternion = new $3Dmol.Quaternion();
+                var screenTransform = new $3Dmol.Quaternion();
 				
 				//Quaternion.setFromEuler
-				finalQuaternion.setFromEuler( deviceEuler );
+                finalQuaternion.setFromEuler( deviceEuler );
 				
-				minusHalfAngle = - screenOrientation / 2;
+                var minusHalfAngle = - screenOrientation / 2;
 
-				screenTransform.set( 0, Math.sin( minusHalfAngle ), 0, Math.cos( minusHalfAngle ) );
+                finalQuaternion.multiply( screenTransform );
 
-				finalQuaternion.multiply( screenTransform );
-
-				finalQuaternion.multiply( worldTransform );
-
-				return finalQuaternion;
-
-			}
-	}();
-	
-		this.onDeviceOrientationChange = function ( event ) {
-			//this.deviceOrientation = event;
-			var alpha, beta, gamma, orient;
-
-			var deviceMatrix;
-
-			return function () {
-
-				
-				alpha  = $3Dmol.Math.degToRad( this.deviceOrientation.alpha || 0 ); // Z
-				beta   = $3Dmol.Math.degToRad( this.deviceOrientation.beta  || 0 ); // X'
-				gamma  = $3Dmol.Math.degToRad( this.deviceOrientation.gamma || 0 ); // Y''
-				orient = $3Dmol.Math.degToRad( this.screenOrientation       || 0 ); // O
-
-				// only process non-zero 3-axis data
-				if ( alpha !== 0 && beta !== 0 && gamma !== 0) {
+                return finalQuaternion;
+       };
 
 
-					deviceQuat = createQuaternion( alpha, beta, gamma, orient );
-
-					console.log("deviceQuat {alpha, beta, gamma, orientation} : {" + alpha + ", " + beta + ", " + gamma + ", " + orient + "}");
-					rotationGroup.quaternion.copy( deviceQuat );
-					
-					
-
-				}
-				
-				show();
-
-			};
-		}.bind( this );
+        window.addEventListener('deviceorientation', function(event) {
+            var alpha  = $3Dmol.Math.degToRad( event.alpha || 0 ); // Z
+            var beta   = $3Dmol.Math.degToRad( event.beta  || 0 ); // X'
+            var gamma  = $3Dmol.Math.degToRad( event.gamma || 0 ); // Y''
+            var orient = $3Dmol.Math.degToRad( this.screenOrientation       || 0 ); // O
+            if ( alpha !== 0 || beta !== 0 || gamma !== 0) {                   
+                   var deviceQuat = createQuaternion( beta, alpha, gamma, orient );
+                   console.log("deviceQuat {alpha, beta, gamma, orientation} : {" + alpha + ", " + beta + ", " + gamma + ", " + orient + "}");
+                  rotationGroup.quaternion.copy( deviceQuat );
+            }
+            show(); 
+        },true);
+		
+		window.addEventListener('orientationchange', function() {
+			screenOrientation =  window.orientation;
+			console.log("screenorientation: {" + screenOrientation + "}");
+		});
+		
 	/*
 		var createRotationMatrix = function () {
 
