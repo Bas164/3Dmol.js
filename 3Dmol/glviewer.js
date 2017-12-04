@@ -645,6 +645,7 @@ $3Dmol.GLViewer = (function() {
 		//window.addEventListener( 'orientationchange', this.onScreenOrientationChange, false );
 		//window.addEventListener( 'deviceorientation', this.onDeviceOrientationChange, false );
 
+
 		
 	
 	
@@ -695,6 +696,7 @@ $3Dmol.GLViewer = (function() {
 			//screenOrientation =  window.screen.orientation;
 			//console.log("screenorientation: {" + screenOrientation + "}");
 		//});
+
 		
 	/*
 		var createRotationMatrix = function () {

@@ -1,0 +1,105 @@
+﻿Merge branch 'bas164' of https://github.com/Bas164/3Dmol.js into bas164
+
+# Conflicts:
+#	3Dmol/glviewer.js
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch bas164
+# Your branch and 'origin/bas164' have diverged,
+# and have 3 and 4 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   3Dmol/glviewer.js
+#	new file:   node_modules/core-util-is/LICENSE
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/core-util-is/README.md -> node_modules/core-util-is/README.md
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/core-util-is/float.patch -> node_modules/core-util-is/float.patch
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/core-util-is/util.js -> node_modules/core-util-is/lib/util.js
+#	new file:   node_modules/core-util-is/package.json
+#	new file:   node_modules/core-util-is/test.js
+#	modified:   node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/README.md
+#	modified:   node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_readable.js
+#	modified:   node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/lib/_stream_writable.js
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/core-util-is/lib/util.js
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/core-util-is/package.json
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits/inherits.js
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits/package.json
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits/test.js
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/isarray/build/build.js
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/isarray/package.json
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder/index.js
+#	deleted:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder/package.json
+#	modified:   node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/package.json
+#	modified:   node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/readable.js
+#	modified:   node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/README.md
+#	modified:   node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/lib/_stream_readable.js
+#	modified:   node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/lib/_stream_writable.js
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/core-util-is/README.md
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/core-util-is/float.patch
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/core-util-is/lib/util.js
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/core-util-is/package.json
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/core-util-is/util.js
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/isarray/README.md
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/isarray/build/build.js
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/isarray/component.json
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/isarray/index.js
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/isarray/package.json
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/string_decoder/.npmignore
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/string_decoder/LICENSE
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/string_decoder/README.md
+#	deleted:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/string_decoder/package.json
+#	modified:   node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/package.json
+#	modified:   node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/readable.js
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits/LICENSE -> node_modules/inherits/LICENSE
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits/README.md -> node_modules/inherits/README.md
+#	new file:   node_modules/inherits/inherits.js
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/inherits/inherits_browser.js -> node_modules/inherits/inherits_browser.js
+#	new file:   node_modules/inherits/package.json
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/isarray/README.md -> node_modules/isarray/README.md
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/isarray/component.json -> node_modules/isarray/component.json
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/isarray/index.js -> node_modules/isarray/index.js
+#	new file:   node_modules/isarray/package.json
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder/.npmignore -> node_modules/string_decoder/.npmignore
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder/LICENSE -> node_modules/string_decoder/LICENSE
+#	renamed:    node_modules/grunt-contrib-jshint/node_modules/jshint/node_modules/htmlparser2/node_modules/readable-stream/node_modules/string_decoder/README.md -> node_modules/string_decoder/README.md
+#	renamed:    node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/gzip-size/node_modules/concat-stream/node_modules/readable-stream/node_modules/string_decoder/index.js -> node_modules/string_decoder/index.js
+#	new file:   node_modules/string_decoder/package.json
+#	new file:   node_modules/tap-consumer/README.md
+#	new file:   node_modules/tap-consumer/package.json
+#	new file:   node_modules/tap-consumer/tap-consumer.js
+#	new file:   node_modules/tap-results/README.md
+#	new file:   node_modules/tap-results/node_modules/inherits/LICENSE
+#	new file:   node_modules/tap-results/node_modules/inherits/README.md
+#	new file:   node_modules/tap-results/node_modules/inherits/inherits.js
+#	new file:   node_modules/tap-results/node_modules/inherits/package.json
+#	new file:   node_modules/tap-results/package.json
+#	new file:   node_modules/tap-results/results.js
+#	new file:   node_modules/yamlish/LICENSE
+#	new file:   node_modules/yamlish/README.md
+#	new file:   node_modules/yamlish/package.json
+#	new file:   node_modules/yamlish/yamlish-py/.npmignore
+#	new file:   node_modules/yamlish/yamlish-py/.travis.yml
+#	new file:   node_modules/yamlish/yamlish-py/README.rst
+#	new file:   node_modules/yamlish/yamlish-py/setup.py
+#	new file:   node_modules/yamlish/yamlish-py/test/__init__.py
+#	new file:   node_modules/yamlish/yamlish-py/test/test_input.py
+#	new file:   node_modules/yamlish/yamlish-py/test/test_load.py
+#	new file:   node_modules/yamlish/yamlish-py/test/test_output.py
+#	new file:   node_modules/yamlish/yamlish-py/test/test_reader.py
+#	new file:   node_modules/yamlish/yamlish-py/test/test_reader_nonUTF8.py
+#	new file:   node_modules/yamlish/yamlish-py/test/test_writer.py
+#	new file:   node_modules/yamlish/yamlish-py/yamlish.py
+#	new file:   node_modules/yamlish/yamlish.js
+#	new file:   npm-debug.log
+#	modified:   tests/auto/imgs/glviewer_js_addLAbel.png
+#
+
