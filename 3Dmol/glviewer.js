@@ -97,7 +97,8 @@ $3Dmol.GLViewer = (function() {
         var ASPECT =renderer.getAspect(WIDTH,HEIGHT);
 
         var camera = new $3Dmol.Camera(fov, ASPECT, NEAR, FAR, config.orthographic);
-        camera.position = new $3Dmol.Vector3(camerax, 0, CAMERA_Z);
+        //camera.useQuaternion = true; //Testing This
+		camera.position = new $3Dmol.Vector3(camerax, 0, CAMERA_Z);
         var lookingAt = new $3Dmol.Vector3();
         camera.lookAt(lookingAt);
 
@@ -657,10 +658,11 @@ $3Dmol.GLViewer = (function() {
 		
         //given deviceorientation values, return correct rotation quaternion
 
-        var createQuaternion = function ( beta, gamma, alpha, screenOrientation ) {
+        //var createQuaternion = function ( beta, gamma, alpha, screenOrientation ) {
+		var createQuaternion = function ( alpha, beta, gamma, screenOrientation ) {
                 //deviceEuler.set( alpha, beta, - gamma, 'XYZ' );
                 
-				deviceEuler = {x:alpha,
+				deviceEuler = {x: alpha,
                                y: beta,
                                z: gamma};
                 
@@ -684,10 +686,14 @@ $3Dmol.GLViewer = (function() {
             var gamma  = $3Dmol.Math.degToRad(event.gamma || 0 ); // Y''
             var orient = $3Dmol.Math.degToRad(90); // O
             if ( alpha !== 0 || beta !== 0 || gamma !== 0) {                   
-                   var deviceQuat = createQuaternion(-beta, gamma, -alpha, orient );
-                   console.log("deviceQuat {alpha, beta, gamma, orientation} : {" +  Math.trunc(event.alpha) + ", " + Math.trunc(event.beta) + ", " + Math.trunc(event.gamma) + ", " + orient + "}");
-                  rotationGroup.quaternion.copy( deviceQuat );
-				  //camera.quaternion.copy( deviceQuat );
+				   //var deviceQuat = createQuaternion(alpha, beta, gamma, orient);
+				   var deviceEuler = {x: alpha,
+                               y: beta,
+                               z: gamma};
+                   console.log("deviceQuat {x, y, z, w} : {" + deviceQuat.x + ", " + deviceQuat.y + ", " + deviceQuat.z + ", " + deviceQuat.w + "}");
+				   console.log("event values {alpha, beta, gamma, orientation} : {" +  Math.trunc(event.alpha) + ", " + Math.trunc(event.beta) + ", " + Math.trunc(event.gamma) + ", " + orient + "}");
+				   //rotationGroup.quaternion.copy( deviceQuat );
+				   camera.rotation.copy( deviceEuler );
             }
             show();
         },true);

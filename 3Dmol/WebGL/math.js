@@ -136,6 +136,7 @@ $3Dmol.Quaternion.prototype = {
     },
 	
 	setFromEuler : function(e) {
+		/*
 		var c1 = Math.cos( e.x / 2 );
 		var c2 = Math.cos( e.y / 2 );
 		var c3 = Math.cos( e.z / 2 );
@@ -149,6 +150,30 @@ $3Dmol.Quaternion.prototype = {
 		this.z = c1 * c2 * s3 + s1 * s2 * c3;
 		this.w = c1 * c2 * c3 - s1 * s2 * s3;
 		
+		return this;
+		*/
+		//var _x = beta  ? beta  * degtorad : 0; // beta value
+		var _x = e.y;// : 0; // beta value
+		var _y = e.z;// : 0; // gamma value
+		var _z = e.x;// : 0; // alpha value
+
+		var cX = Math.cos( _x/2 );
+		var cY = Math.cos( _y/2 );
+		var cZ = Math.cos( _z/2 );
+		var sX = Math.sin( _x/2 );
+		var sY = Math.sin( _y/2 );
+		var sZ = Math.sin( _z/2 );
+
+		//
+		// ZXY quaternion construction.
+		//
+
+		this.w = cX * cY * cZ - sX * sY * sZ;
+		this.x = sX * cY * cZ - cX * sY * sZ;
+		this.y = cX * sY * cZ + sX * cY * sZ;
+		this.z = cX * cY * sZ + sX * sY * cZ;
+
+		//return [ w, x, y, z ];
 		return this;
 	}
     
